@@ -1,0 +1,23 @@
+[build]
+command = "npm run build"
+functions = "out_functions"
+
+[build.environment]
+NODE_VERSION = "18"
+
+[build.publish]
+directory = ".next"
+
+[dev]
+command = "npm run dev"
+publish = "out_publish"
+functions = "out_functions"
+
+[dev.environment]
+NODE_VERSION = "18"
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+force = true

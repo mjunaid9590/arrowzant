@@ -48,7 +48,7 @@ const Novel = ({ params, searchParams }) => {
                             <div key={index} className="p-4 md:w-1/3">
                                 {/* {console.log(chaptersData)} */}
                                 <Link href={`/${currentNovel.slug}/${chapter.chapterLink}`} className="flex rounded-lg h-full bg-gray-100 p-3 flex-col hover:shadow-md hover:bg-indigo-100">
-                                    <h2 className="text-indigo-800 text-lg title-font font-medium">{chapter.chapterNumber}</h2>
+                                    <h2 className="text-indigo-800 text-lg title-font font-medium">CHAPTER-{chapter.chapterNumber}</h2>
                                     <p className="leading-relaxed text-sm">{chapter.chapterTitle}</p>
                                 </Link>
                             </div>

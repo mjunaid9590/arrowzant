@@ -3,7 +3,6 @@ import { Inter } from 'next/font/google'
 import NavbarUnprotected from '@/components/NavbarUnprotected'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import 'styled-jsx/style'
 
 const inter = Inter({ subsets: ['latin'] })
 

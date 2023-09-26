@@ -2,9 +2,9 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <div className='border-t-2 border-slate-300'>
+        <div className='border-t-2 border-slate-300 w-full absolute bottom-0 mt-4'>
             <footer className="text-gray-600 body-font">
-                <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+                <div className="container px-5 py-1 mx-auto flex items-center sm:flex-row flex-col">
                     <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -18,17 +18,17 @@ const Footer = () => {
                         >
                             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
                         </svg>
-                        <span className="ml-3 text-xl">Tailblocks</span>
+                        <span className="ml-3 text-xl">ArrowzanT</span>
                     </a>
                     <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
-                        © 2020 Tailblocks —
+                        Copyrights © 2023 —
                         <a
                             href="https://twitter.com/knyttneve"
                             className="text-gray-600 ml-1"
                             rel="noopener noreferrer"
                             target="_blank"
                         >
-                            @knyttneve
+                            @arrowzanT
                         </a>
                     </p>
                     <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">

@@ -6,7 +6,7 @@ const axios = require('axios');
 
 
 export default function Home() {
-  console.log(novelsData)
+  // console.log(novelsData)
   return (
     <main className="flex h-full flex-col items-center justify-between p-5">
       <section className="text-gray-600 body-font min-w-full">

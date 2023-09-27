@@ -98,16 +98,16 @@
 import React from 'react'
 export function generateStaticParams() {
     return [
-      { chapter: 'abc', product: '123' },
-      { chapter: 'b', product: '2' },
-      { chapter: 'c', product: '3' },
+      { novel: 'abc', chapter: 'abc', product: '123' },
+      { novel: 'abc', chapter: 'b', product: '2' },
+      { novel: 'abc', chapter: 'c', product: '3' },
     ]
   }
-const Page = ({params}) => {
+const Chapter = ({params}) => {
     const {chapter, product} = params
   return (
     <div>
-      Novel: {novel}
+      Chapter: {chapter}
       <div>
         Product: {product}
       </div>
@@ -115,4 +115,4 @@ const Page = ({params}) => {
   )
 }
 
-export default Page
+export default Chapter

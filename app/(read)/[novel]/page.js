@@ -4,17 +4,6 @@ import chaptersData from '../../../public/data/theMysteryOfMoonlight.json'
 import novelsData from '@/public/data/novels.json'
 import Pagination from '@/components/Pagination'
 import { paginateData } from '@/utils/pagination'
-export function generateStaticParams() {
-
-    return novelsData.map((novel) => ({
-        novel: novel.slug
-      }))
-    // return [
-    //   { novel: 'abc', product: '123' },
-    //   { novel: 'b', product: '2' },
-    //   { novel: 'c', product: '3' },
-    // ]
-  }
 
 const Novel = ({ params, searchParams }) => {
     const {novel}=params

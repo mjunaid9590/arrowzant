@@ -6,23 +6,7 @@ import novelsData from '@/public/data/novels.json'
 import ChapterPagination from '@/components/ChapterPagination'
 import { paginateData } from '@/utils/pagination'
 
-export function generateStaticParams() {
-  const pairs = [];
-  novelsData.forEach(novel => {
-    chaptersData.forEach(chapter => {
-        const pair = {
-            slug: novel.slug,
-            chapter: chapter.chapterLink
-        };
-        pairs.push(pair);
-    });
-});
 // console.log("pairs: ", pairs)
-return pairs.map((pair) => ({
-  novel: pair.slug,
-  chapter: pair.chapter
-}))
-}
 
 const Chapter = ({ params, searchParams }) => {
   const { novel, chapter } = params

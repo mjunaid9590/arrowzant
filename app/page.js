@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link';
 import novelsData from '@/public/data/novels.json'
+import MainCarousel from '@/components/MainCarousel';
+import CategoryHeadingLandingPage from '@/components/CategoryHeadingLandingPage';
 const axios = require('axios');
 
 
@@ -8,8 +10,14 @@ const axios = require('axios');
 export default function Home() {
   // console.log(novelsData)
   return (
-    <main className="flex h-full flex-col items-center justify-between p-5">
+    <>
+    <main className="flex h-full flex-col items-center justify-between p-10 pt-1">
+      <div className="carousel-container w-full">
+      <MainCarousel />
+
+      </div>
       <section className="text-gray-600 body-font min-w-full">
+        <CategoryHeadingLandingPage categoryName="Horror" />
         <div className="container px-5mx-auto">
           <div className="flex flex-wrap w-full mb-10 flex-col items-center text-center">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
@@ -39,5 +47,6 @@ export default function Home() {
       </section>
 
     </main>
+    </>
   )
 }

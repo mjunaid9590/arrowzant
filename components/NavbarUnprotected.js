@@ -6,6 +6,7 @@ import DropDownSimple from './DropDownSimple';
 
 const Navbar = () => {
     const [isDropdownOpen, setDropdownOpen] = useState(false);
+    const [isSearchOpen, setIsSearchOpen] = useState(false);
     const [selectedOption, setSelectedOption] = useState('Home'); // Default selected option
     console.log("server or client")
     return (
@@ -28,7 +29,7 @@ const Navbar = () => {
                         aria-controls="navbar-search"
                         aria-expanded="false"
                         className="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
-                        onClick={() => setDropdownOpen(!isDropdownOpen)}
+                        onClick={() => setIsSearchOpen(!isSearchOpen)}
                     >
                         <svg
                             className="w-5 h-5"
@@ -100,8 +101,8 @@ const Navbar = () => {
                     </button>
                 </div>
                 {
-                    <div className={`items-center justify-between ${!isDropdownOpen ? 'hidden' : ''} w-full md:flex md:w-auto md:order-1" id="navbar-search`}>
-                        <div className="relative mt-3 md:hidden">
+                    <div className={`items-center justify-between ${((isDropdownOpen) || (isSearchOpen)) ? '' : 'hidden'} w-full md:flex md:w-auto md:order-1" id="navbar-search`}>
+                        <div className={`relative mt-3 md:hidden ${!isSearchOpen ? 'hidden' : ''}`}>
                             <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                                 <svg
                                     className="w-4 h-4 text-gray-500 dark:text-gray-400"
@@ -126,7 +127,7 @@ const Navbar = () => {
                                 placeholder="Search..."
                             />
                         </div>
-                        <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <ul className={`flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 ${!isDropdownOpen ? 'hidden md:flex md:flex-row' : ''}`}>
                             <li className=' my-auto'>
                                 <a
                                     href="#"

@@ -38,8 +38,8 @@ export default function BookBasicCard() {
   };
 
   return (
-    <Link href='/'>
-      <Card sx={{ maxWidth: 200 }}>
+    <Link href='/' >
+      <Card sx={{ maxWidth: 200 }} className='p-3 md:p-0'>
         {/* <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">

@@ -18,110 +18,142 @@ export default function Home() {
 
         </div>
         <section className="text-gray-600 body-font min-w-full">
-          <div className="category-container mt-8">
+          <div className="category-container flex flex-col mt-8">
             <CategoryHeadingLandingPage categoryTitle="Editor's Picks" />
-            <div className="category-short-list-container flex flex-wrap flex-row grid-cols-4">
+            <div className="category-short-list-container overflow-x-auto pb-10 hide-scroll-bar w-screen flex flex-wrap md:flex-row">
+              <div className="flex flex-nowrap lg:ml-40 md:ml-20 ml-5 " >
+                <div className='md:w-1/5 px-2'>
 
-              <div className='w-1/5'>
+                  <BookBasicCard />
+                </div>
+                <div className='md:w-1/5 px-2'>
 
-                <BookBasicCard />
-              </div>
-              <div className='w-1/5'>
+                  <BookBasicCard />
+                </div>
+                <div className='md:w-1/5 px-2'>
 
-                <BookBasicCard />
-              </div>
-              <div className='w-1/5'>
+                  <BookBasicCard />
+                </div>
+                <div className='md:w-1/5 px-2'>
 
-                <BookBasicCard />
-              </div>
-              <div className='w-1/5'>
+                  <BookBasicCard />
+                </div>
+                <div className='md:w-1/5 px-2'>
 
-                <BookBasicCard />
-              </div>
-              <div className='w-1/5'>
-
-                <BookBasicCard />
-              </div>
-            </div>
-          </div>
-          <div className="category-container mt-8">
-            <CategoryHeadingLandingPage categoryTitle="Horror" />
-            <div className="category-short-list-container flex flex-wrap flex-row grid-cols-4">
-
-              <div className='w-1/5'>
-
-                <BookBasicCard />
-              </div>
-              <div className='w-1/5'>
-
-                <BookBasicCard />
-              </div>
-              <div className='w-1/5'>
-
-                <BookBasicCard />
-              </div>
-              <div className='w-1/5'>
-
-                <BookBasicCard />
-              </div>
-              <div className='w-1/5'>
-
-                <BookBasicCard />
+                  <BookBasicCard />
+                </div>
               </div>
             </div>
           </div>
-          <div className="category-container mt-8">
-            <CategoryHeadingLandingPage categoryTitle="Romance" />
-            <div className="category-short-list-container flex flex-wrap flex-row grid-cols-4">
+          <div className="category-container flex flex-col mt-8">
+            <CategoryHeadingLandingPage categoryTitle="Editor's Picks" />
+            <div className="category-short-list-container overflow-x-auto pb-10 hide-scroll-bar w-screen flex flex-wrap md:flex-row">
+              <div className="flex flex-nowrap lg:ml-40 md:ml-20 ml-5 " >
+                <div className='md:w-1/5 px-2'>
 
-              <div className='w-1/5'>
+                  <BookBasicCard />
+                </div>
+                <div className='md:w-1/5 px-2'>
 
-                <BookBasicCard />
-              </div>
-              <div className='w-1/5'>
+                  <BookBasicCard />
+                </div>
+                <div className='md:w-1/5 px-2'>
 
-                <BookBasicCard />
-              </div>
-              <div className='w-1/5'>
+                  <BookBasicCard />
+                </div>
+                <div className='md:w-1/5 px-2'>
 
-                <BookBasicCard />
-              </div>
-              <div className='w-1/5'>
+                  <BookBasicCard />
+                </div>
+                <div className='md:w-1/5 px-2'>
 
-                <BookBasicCard />
-              </div>
-              <div className='w-1/5'>
-
-                <BookBasicCard />
-              </div>
-            </div>
-          </div>
-          <div className="category-container mt-8">
-            <CategoryHeadingLandingPage categoryTitle="Science" />
-            <div className="category-short-list-container flex flex-wrap flex-row grid-cols-4">
-
-              <div className='w-1/5'>
-
-                <BookBasicCard />
-              </div>
-              <div className='w-1/5'>
-
-                <BookBasicCard />
-              </div>
-              <div className='w-1/5'>
-
-                <BookBasicCard />
-              </div>
-              <div className='w-1/5'>
-
-                <BookBasicCard />
-              </div>
-              <div className='w-1/5'>
-
-                <BookBasicCard />
+                  <BookBasicCard />
+                </div>
               </div>
             </div>
           </div>
+          <div className="category-container flex flex-col mt-8">
+            <CategoryHeadingLandingPage categoryTitle="Editor's Picks" />
+            <div className="category-short-list-container overflow-x-auto pb-10 hide-scroll-bar w-screen flex flex-wrap md:flex-row">
+              <div className="flex flex-nowrap lg:ml-40 md:ml-20 ml-5 " >
+                <div className='md:w-1/5 px-2'>
+
+                  <BookBasicCard />
+                </div>
+                <div className='md:w-1/5 px-2'>
+
+                  <BookBasicCard />
+                </div>
+                <div className='md:w-1/5 px-2'>
+
+                  <BookBasicCard />
+                </div>
+                <div className='md:w-1/5 px-2'>
+
+                  <BookBasicCard />
+                </div>
+                <div className='md:w-1/5 px-2'>
+
+                  <BookBasicCard />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="category-container flex flex-col mt-8">
+            <CategoryHeadingLandingPage categoryTitle="Editor's Picks" />
+            <div className="category-short-list-container overflow-x-auto pb-10 hide-scroll-bar w-screen flex flex-wrap md:flex-row">
+              <div className="flex flex-nowrap lg:ml-40 md:ml-20 ml-5 " >
+                <div className='md:w-1/5 px-2'>
+
+                  <BookBasicCard />
+                </div>
+                <div className='md:w-1/5 px-2'>
+
+                  <BookBasicCard />
+                </div>
+                <div className='md:w-1/5 px-2'>
+
+                  <BookBasicCard />
+                </div>
+                <div className='md:w-1/5 px-2'>
+
+                  <BookBasicCard />
+                </div>
+                <div className='md:w-1/5 px-2'>
+
+                  <BookBasicCard />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="category-container flex flex-col mt-8">
+            <CategoryHeadingLandingPage categoryTitle="Editor's Picks" />
+            <div className="category-short-list-container overflow-x-auto pb-10 hide-scroll-bar w-screen flex flex-wrap md:flex-row">
+              <div className="flex flex-nowrap lg:ml-40 md:ml-20 ml-5 " >
+                <div className='md:w-1/5 px-2'>
+
+                  <BookBasicCard />
+                </div>
+                <div className='md:w-1/5 px-2'>
+
+                  <BookBasicCard />
+                </div>
+                <div className='md:w-1/5 px-2'>
+
+                  <BookBasicCard />
+                </div>
+                <div className='md:w-1/5 px-2'>
+
+                  <BookBasicCard />
+                </div>
+                <div className='md:w-1/5 px-2'>
+
+                  <BookBasicCard />
+                </div>
+              </div>
+            </div>
+          </div>
+          
           <div className="container px-5mx-auto">
             {/* <div className="flex flex-wrap w-full mb-10 flex-col items-center text-center">
               <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">

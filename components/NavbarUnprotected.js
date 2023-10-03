@@ -3,7 +3,6 @@ import Link from 'next/link'
 import React from 'react'
 import { useState } from 'react';
 import DropDownSimple from './DropDownSimple';
-import { Menu,StyledMenuItem, StyledListbox } from '@mui/material';
 
 const Navbar = () => {
     const [isDropdownOpen, setDropdownOpen] = useState(false);

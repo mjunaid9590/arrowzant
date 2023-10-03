@@ -45,12 +45,12 @@ export default function MainCarousel(props) {
 
 function Item(props) {
     return (
-        <Link href="/">
+        <Link href="/" className='z-40 relative'>
             <Paper>
                 {/* <h2>{props.item.name}</h2>
             <p>{props.item.description}</p> */}
                 <div>
-                    <Image alt={props.item.name} src={props.item.url} width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }}>
+                    <Image className='z-30' alt={props.item.name} src={props.item.url} width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }}>
                     </Image>
                 </div>
                 {/* <Button className="CheckButton">

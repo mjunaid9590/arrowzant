@@ -11,13 +11,23 @@ import Collapse from '@mui/material/Collapse';
 import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import { red } from '@mui/material/colors';
+import { indigo, red } from '@mui/material/colors';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import SmallRating from './SmallRating';
 import Link from 'next/link';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { lime, purple } from '@mui/material/colors';
+
+
+const theme = createTheme({
+  palette: {
+    primary: lime,
+    secondary: indigo
+  },
+});
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -38,8 +48,9 @@ export default function BookBasicCard() {
   };
 
   return (
-    <Link href='/' >
-      <Card sx={{ maxWidth: 200 }} className='p-3 md:p-0'>
+    <Link href='/' className='dark:bg-slate-600'>
+    <ThemeProvider theme={theme}>
+      <Card sx={{ maxWidth: 200 }} className='p-3 md:p-0 dark:bg-gray-700 dark:text-gray-200'>
         {/* <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
@@ -73,7 +84,7 @@ export default function BookBasicCard() {
           <IconButton aria-label="add to favorites">
             <FavoriteIcon />
           </IconButton>
-          <IconButton aria-label="share">
+          <IconButton aria-label="share" color='secondary'>
             <ShareIcon />
           </IconButton>
           {/* <ExpandMore
@@ -115,6 +126,7 @@ export default function BookBasicCard() {
         </CardContent>
       </Collapse> */}
       </Card>
+      </ThemeProvider>
     </Link>
   );
 }

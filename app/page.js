@@ -12,7 +12,7 @@ export default function Home() {
   // console.log(novelsData)
   return (
     <>
-      <main className="flex h-full w-full flex-col items-center justify-between p-10 pt-1">
+      <main className="flex h-full w-full flex-col items-center justify-between md:p-10 pt-1">
         <div className="carousel-container w-full md:px-20">
           <MainCarousel />
 

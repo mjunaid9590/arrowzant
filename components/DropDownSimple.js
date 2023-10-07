@@ -13,7 +13,7 @@ export default function DropDownSimple() {
   };
 
   return (
-    <div className="z-50">
+    <div className="z-50 overflow-visible relative">
 
     <Dropdown >
       <TriggerButton>Category</TriggerButton>
@@ -71,9 +71,7 @@ const StyledListbox = styled('ul')(
   background: ${theme.palette.mode === 'dark' ? grey[900] : '#fff'};
   border: 1px solid ${theme.palette.mode === 'dark' ? grey[700] : grey[200]};
   color: ${theme.palette.mode === 'dark' ? grey[300] : grey[900]};
-  box-shadow: 0px 2px 16px ${theme.palette.mode === 'dark' ? grey[900] : grey[200]};
-  z-index: 1;
-  `,
+  box-shadow: 0px 2px 16px ${theme.palette.mode === 'dark' ? grey[900] : grey[200]};  `,
 );
 
 const StyledMenuItem = styled(MenuItem)(

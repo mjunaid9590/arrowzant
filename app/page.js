@@ -13,12 +13,12 @@ export default function Home() {
   return (
     <>
       <main className="flex h-full w-full flex-col items-center justify-between md:p-10 pt-1">
-        <div className="carousel-container w-full md:px-20">
+        {/* <div className="carousel-container w-full md:px-20">
           <MainCarousel />
 
-        </div>
+        </div> */}
         <section className="text-gray-600 body-font w-full">
-          <div className="category-container flex flex-col mt-8">
+          <div className="category-container flex flex-col mt-4">
             <CategoryHeadingLandingPage categoryTitle="Editor's Picks" />
             <div className="category-short-list-container w-full  overflow-x-auto md:overflow-clip pb-10 hide-scroll-bar flex flex-wrap md:flex-row">
               <div className="flex flex-nowrap md:flex-wrap md:justify-evenly w-full " >

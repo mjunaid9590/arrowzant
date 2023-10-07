@@ -1,8 +1,12 @@
 "use client"
 import Link from 'next/link'
 import React from 'react'
+import { Fragment } from 'react'
+
 import { useState } from 'react';
 import DropDownSimple from './DropDownSimple';
+import { MenuList, StyledListbox, MenuItem } from '@mui/material';
+import { Menu } from '@headlessui/react';
 
 const Navbar = () => {
     const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -10,7 +14,7 @@ const Navbar = () => {
     const [selectedOption, setSelectedOption] = useState('Home'); // Default selected option
     console.log("server or client")
     return (
-        <nav className="bg-white border-gray-200 dark:bg-gray-900 shadow-xl z-20">
+        <nav className="bg-white border-gray-200 dark:bg-gray-900 shadow-xl overflow-visible">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="https://flowbite.com/" className="flex items-center">
                     <img
@@ -139,23 +143,32 @@ const Navbar = () => {
                             </li>
                             <li>
                                 {/* <DropDownSimple /> */}
-                                <a
-                                    href="#"
+                                <Link
+                                    href="/genre"
                                     className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                                 >
                                     Category
-                                </a>
-                                {/* <Menu slots={{ listbox: StyledListbox }}>
-                                    <StyledMenuItem >
-                                        Profile
-                                    </StyledMenuItem>
-                                    <StyledMenuItem>
-                                        My account
-                                    </StyledMenuItem>
-                                    <StyledMenuItem >
-                                        Log out
-                                    </StyledMenuItem>
+                                </Link>
+                                {/* <Menu>
+                                    <Menu.Button>Categories</Menu.Button>
+                                    <Menu.Items>
+                                        <Menu.Item >Horror</Menu.Item>
+                                        <Menu.Item >Horror</Menu.Item>
+                                    </Menu.Items>
                                 </Menu> */}
+                                {/* <div className='sticky'>
+                                    <MenuList >
+                                        <MenuItem >
+                                            Profile
+                                        </MenuItem>
+                                        <MenuItem>
+                                            My account
+                                        </MenuItem>
+                                        <MenuItem >
+                                            Log out
+                                        </MenuItem>
+                                    </MenuList>
+                                </div> */}
                             </li>
                             <li className=' my-auto'>
                                 <a

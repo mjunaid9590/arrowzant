@@ -27,51 +27,51 @@ export default function Genre() {
               <div className="flex flex-wrap md:flex-wrap md:justify-evenly w-full" >
                 <div className='px-2 p-4 w-1/2 md:w-1/5'>
 
-                  <CategoryCard genreTitle="Horror" imgURL="/genre/horror.png"/>
+                  <CategoryCard genreSlug="horror" genreTitle="Horror" imgURL="/genre/horror.png"/>
                 </div>
                 <div className='px-2 p-4 w-1/2 md:w-1/5'>
 
-                  <CategoryCard genreTitle="Romance" imgURL="/genre/romance.jpg"/>
+                  <CategoryCard genreSlug="horror" genreTitle="Romance" imgURL="/genre/romance.jpg"/>
                 </div>
                 <div className='px-2 p-4 w-1/2 md:w-1/5'>
 
-                  <CategoryCard genreTitle="Crime" imgURL="/genre/crime.png"/>
+                  <CategoryCard genreSlug="horror" genreTitle="Crime" imgURL="/genre/crime.png"/>
                 </div>
                 <div className='px-2 p-4 w-1/2 md:w-1/5'>
 
-                  <CategoryCard genreTitle="Historical" imgURL="/genre/historical.jpg"/>
+                  <CategoryCard genreSlug="horror" genreTitle="Historical" imgURL="/genre/historical.jpg"/>
                 </div>
                 <div className='px-2 p-4 w-1/2 md:w-1/5'>
 
-                  <CategoryCard genreTitle="Adventure" imgURL="/genre/adventure.png"/>
+                  <CategoryCard genreSlug="horror" genreTitle="Adventure" imgURL="/genre/adventure.png"/>
                 </div>
                 <div className='px-2 p-4 w-1/2 md:w-1/5'>
 
-                  <CategoryCard genreTitle="Contemporary" imgURL="/genre/contemporary.png"/>
+                  <CategoryCard genreSlug="horror" genreTitle="Contemporary" imgURL="/genre/contemporary.png"/>
                 </div>
                 <div className='px-2 p-4 w-1/2 md:w-1/5'>
 
-                  <CategoryCard genreTitle="Family" imgURL="/genre/family.jpg"/>
+                  <CategoryCard genreSlug="horror" genreTitle="Family" imgURL="/genre/family.jpg"/>
                 </div>
                 <div className='px-2 p-4 w-1/2 md:w-1/5'>
 
-                  <CategoryCard genreTitle="Fantasy" imgURL="/genre/fantasy.png"/>
+                  <CategoryCard genreSlug="horror" genreTitle="Fantasy" imgURL="/genre/fantasy.png"/>
                 </div>
                 <div className='px-2 p-4 w-1/2 md:w-1/5'>
 
-                  <CategoryCard genreTitle="Mafia" imgURL="/genre/mafia.jpg"/>
+                  <CategoryCard genreSlug="horror" genreTitle="Mafia" imgURL="/genre/mafia.jpg"/>
                 </div>
                 <div className='px-2 p-4 w-1/2 md:w-1/5'>
 
-                  <CategoryCard genreTitle="Mystery" imgURL="/genre/mystery.jpg"/>
+                  <CategoryCard genreSlug="horror" genreTitle="Mystery" imgURL="/genre/mystery.jpg"/>
                 </div>
                 <div className='px-2 p-4 w-1/2 md:w-1/5'>
 
-                  <CategoryCard genreTitle="Paranormal" imgURL="/genre/paranormal.jpg"/>
+                  <CategoryCard genreSlug="horror" genreTitle="Paranormal" imgURL="/genre/paranormal.jpg"/>
                 </div>
                 <div className='px-2 p-4 w-1/2 md:w-1/5'>
 
-                  <CategoryCard genreTitle="Royal" imgURL="/genre/royal.jpg"/>
+                  <CategoryCard genreSlug="horror" genreTitle="Royal" imgURL="/genre/royal.jpg"/>
                 </div>
               </div>
             </div>

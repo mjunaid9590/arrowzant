@@ -5,12 +5,14 @@ import MainCarousel from '@/components/MainCarousel';
 import CategoryHeadingLandingPage from '@/components/CategoryHeadingLandingPage';
 // import CategoryCard from '@/components/BookBasicCard';
 import CategoryCard from '@/components/CategoryCard';
+import NovelCardLarge from '@/components/NovelCardLarge';
 const axios = require('axios');
 
 
 
-export default function Home() {
-  // console.log(novelsData)
+export default function Home({params}) {
+
+  console.log(params)
   return (
     <>
       <main className="flex h-full w-full flex-col items-center justify-between md:p-10 pt-4 mb-auto">
@@ -20,59 +22,68 @@ export default function Home() {
         </div> */}
         <section className="text-gray-600 body-font w-full">
           <div className="category-container flex flex-col">
-          <h1 className='my-auto text-center text-2xl md:text-4xl text-black dark:text-gray-300 font-bold'>Genres</h1>
+          <h1 className='my-auto uppercase text-center text-2xl md:text-4xl text-black dark:text-gray-300 font-bold'>{params.category}</h1>
           <div className='w-full border-solid border-2 border-indigo-300 dark:border-indigo-500 mt-3' />
 
             <div className="category-short-list-container w-full pb-10 pt-8 flex flex-wrap flex-grow">
               <div className="flex flex-wrap md:flex-wrap md:justify-evenly w-full" >
-                <div className='px-2 p-4 w-1/2 md:w-1/5'>
+                <div className='px-2 p-4'>
 
-                  <CategoryCard genreTitle="Horror" imgURL="/genre/horror.png"/>
+                  <NovelCardLarge name="Mysterical Moon" author="Jane Austing" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
                 </div>
-                <div className='px-2 p-4 w-1/2 md:w-1/5'>
+                <div className='px-2 p-4'>
 
-                  <CategoryCard genreTitle="Romance" imgURL="/genre/romance.jpg"/>
+                  <NovelCardLarge name="Mysterical Moon" author="Jane Austing" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
                 </div>
-                <div className='px-2 p-4 w-1/2 md:w-1/5'>
+                <div className='px-2 p-4'>
 
-                  <CategoryCard genreTitle="Crime" imgURL="/genre/crime.png"/>
+                  <NovelCardLarge name="Mysterical Moon" author="Jane Austing" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
                 </div>
-                <div className='px-2 p-4 w-1/2 md:w-1/5'>
+                <div className='px-2 p-4'>
 
-                  <CategoryCard genreTitle="Historical" imgURL="/genre/historical.jpg"/>
+                  <NovelCardLarge name="Mysterical Moon" author="Jane Austing" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
                 </div>
-                <div className='px-2 p-4 w-1/2 md:w-1/5'>
+                <div className='px-2 p-4'>
 
-                  <CategoryCard genreTitle="Adventure" imgURL="/genre/adventure.png"/>
+                  <NovelCardLarge name="Mysterical Moon" author="Jane Austing" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
                 </div>
-                <div className='px-2 p-4 w-1/2 md:w-1/5'>
+                <div className='px-2 p-4'>
 
-                  <CategoryCard genreTitle="Contemporary" imgURL="/genre/contemporary.png"/>
+                  <NovelCardLarge name="Mysterical Moon" author="Jane Austing" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
                 </div>
-                <div className='px-2 p-4 w-1/2 md:w-1/5'>
+                <div className='px-2 p-4'>
 
-                  <CategoryCard genreTitle="Family" imgURL="/genre/family.jpg"/>
+                  <NovelCardLarge name="Mysterical Moon" author="Jane Austing" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
                 </div>
-                <div className='px-2 p-4 w-1/2 md:w-1/5'>
+                <div className='px-2 p-4'>
 
-                  <CategoryCard genreTitle="Fantasy" imgURL="/genre/fantasy.png"/>
+                  <NovelCardLarge name="Mysterical Moon" author="Jane Austing" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
                 </div>
-                <div className='px-2 p-4 w-1/2 md:w-1/5'>
+                <div className='px-2 p-4'>
 
-                  <CategoryCard genreTitle="Mafia" imgURL="/genre/mafia.jpg"/>
+                  <NovelCardLarge name="Mysterical Moon" author="Jane Austing" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
                 </div>
-                <div className='px-2 p-4 w-1/2 md:w-1/5'>
+                <div className='px-2 p-4'>
 
-                  <CategoryCard genreTitle="Mystery" imgURL="/genre/mystery.jpg"/>
+                  <NovelCardLarge name="Mysterical Moon" author="Jane Austing" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
                 </div>
-                <div className='px-2 p-4 w-1/2 md:w-1/5'>
+                <div className='px-2 p-4'>
 
-                  <CategoryCard genreTitle="Paranormal" imgURL="/genre/paranormal.jpg"/>
+                  <NovelCardLarge name="Mysterical Moon" author="Jane Austing" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
                 </div>
-                <div className='px-2 p-4 w-1/2 md:w-1/5'>
+                <div className='px-2 p-4'>
 
-                  <CategoryCard genreTitle="Royal" imgURL="/genre/royal.jpg"/>
+                  <NovelCardLarge name="Mysterical Moon" author="Jane Austing" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
                 </div>
+                <div className='px-2 p-4'>
+
+                  <NovelCardLarge name="Mysterical Moon" author="Jane Austing" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
+                </div>
+                <div className='px-2 p-4'>
+
+                  <NovelCardLarge name="Mysterical Moon" author="Jane Austing" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
+                </div>
+                
               </div>
             </div>
           </div>

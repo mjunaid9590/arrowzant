@@ -48,10 +48,10 @@ export default function BookBasicCard() {
   };
 
   return (
-    <Link href='/' className='dark:bg-slate-600'>
-    <ThemeProvider theme={theme}>
-      <Card sx={{ maxWidth: 200 }} className='p-3 md:p-0 dark:bg-gray-700 dark:text-gray-200'>
-        {/* <CardHeader
+    <Link href='/horror/the-mystery-of-moonlight' className='dark:bg-slate-600'>
+      <ThemeProvider theme={theme}>
+        <Card sx={{ maxWidth: 200 }} className='p-3 md:p-0 dark:bg-gray-700 dark:text-gray-200'>
+          {/* <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
             R
@@ -65,29 +65,29 @@ export default function BookBasicCard() {
         title="Shrimp and Chorizo Paella"
         subheader="September 14, 2016"
       /> */}
-        <CardMedia
-          component="img"
-          height="194"
-          image="/covers/cover2.jpg"
-          alt="Paella dish"
-        />
-        <CardContent>
-          {/* <Typography variant="body2" color="text.secondary">
+          <CardMedia
+            component="img"
+            height="194"
+            image="/covers/cover2.jpg"
+            alt="Paella dish"
+          />
+          <CardContent>
+            {/* <Typography variant="body2" color="text.secondary">
           This impressive paella is a perfect party dish and a fun meal to cook
           together with your guests. Add 1 cup of frozen peas along with the mussels,
           if you like.
         </Typography> */}
-          <h2>The Cursed Alpha's Mate</h2>
-        </CardContent>
-        <SmallRating />
-        <CardActions disableSpacing>
-          <IconButton aria-label="add to favorites">
-            <FavoriteIcon />
-          </IconButton>
-          <IconButton aria-label="share" color='secondary'>
-            <ShareIcon />
-          </IconButton>
-          {/* <ExpandMore
+            <h2>The Cursed Alpha's Mate</h2>
+          </CardContent>
+          <SmallRating />
+          <CardActions disableSpacing>
+            <IconButton aria-label="add to favorites">
+              <FavoriteIcon />
+            </IconButton>
+            <IconButton aria-label="share" color='secondary'>
+              <ShareIcon />
+            </IconButton>
+            {/* <ExpandMore
           expand={expanded}
           onClick={handleExpandClick}
           aria-expanded={expanded}
@@ -95,8 +95,8 @@ export default function BookBasicCard() {
         >
           <ExpandMoreIcon />
         </ExpandMore> */}
-        </CardActions>
-        {/* <Collapse in={expanded} timeout="auto" unmountOnExit>
+          </CardActions>
+          {/* <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography paragraph>Method:</Typography>
           <Typography paragraph>
@@ -125,7 +125,7 @@ export default function BookBasicCard() {
           </Typography>
         </CardContent>
       </Collapse> */}
-      </Card>
+        </Card>
       </ThemeProvider>
     </Link>
   );

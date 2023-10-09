@@ -12,7 +12,7 @@ const axios = require('axios');
 
 export default function Home({params}) {
 
-  console.log(params)
+  // console.log(params)
   return (
     <>
       <main className="flex h-full w-full flex-col items-center justify-between md:p-10 pt-4 mb-auto">

@@ -13,7 +13,7 @@ const Chapter = ({ params, searchParams }) => {
   // console.log("params: ", params)
   
   const currentNovel = novelsData.find((n) => n.slug === novel);
-  console.log("Current Novel",currentNovel)
+  // console.log("Current Novel",currentNovel)
   const currentChapter = chaptersData.find((n) => n.chapterLink === chapter);
 
   // console.log("current Novel", novelsData)
@@ -37,6 +37,26 @@ const Chapter = ({ params, searchParams }) => {
     },
     {
       "paragraph_number": 5,
+      "text": "With each deliberate step, Sarah embarked on her quest to unravel the mysteries of moonlight. The night itself seemed to hold its breath, waiting for her to decipher the enigma that had enthralled her for so long. She knew, deep in her heart, that this journey would alter the course of her life in ways she could not yet fathom."
+    },
+    {
+      "paragraph_number": 6,
+      "text": "The moon hung low in the night sky, a luminous orb bathing the quiet town of Moonville in its silvery radiance. Its light, ethereal and haunting, transformed the familiar cobblestone streets into pathways of enchantment. Every corner seemed to hold a secret, every shadow whispered a tale of ages past."
+    },
+    {
+      "paragraph_number": 7,
+      "text": "Sarah stood transfixed by the window, her pulse quickening as she witnessed the moonlight's mesmerizing dance on the still surface of the lake. It was as if the very essence of magic flowed through the shimmering beams, weaving a spell of wonder and intrigue. The stories her grandmother used to tell her about the moon now seemed more than mere tales; they felt like the keys to an undiscovered realm."
+    },
+    {
+      "paragraph_number": 8,
+      "text": "Unbeknownst to Sarah, this night marked the inception of an extraordinary odyssey. The air was charged with an otherworldly energy, and the soft murmur of the breeze carried cryptic messages. She felt an irresistible tug toward the lakeshore, as if the moon itself beckoned her. Her heart swelled with curiosity, and her steps were guided by a force beyond her comprehension."
+    },
+    {
+      "paragraph_number": 9,
+      "text": "Venturing out into the cool embrace of the night, Sarah was acutely aware that she was on the threshold of revelation. What enigmatic secrets did the moonlight conceal? The world around her underwent a wondrous metamorphosis in the gentle radiance. Shadows stretched into intricate tapestries, and even the most ordinary objects took on an aura of magic. It was as if the moonlight painted reality with its own surreal brush."
+    },
+    {
+      "paragraph_number": 10,
       "text": "With each deliberate step, Sarah embarked on her quest to unravel the mysteries of moonlight. The night itself seemed to hold its breath, waiting for her to decipher the enigma that had enthralled her for so long. She knew, deep in her heart, that this journey would alter the course of her life in ways she could not yet fathom."
     }
   ]
@@ -79,7 +99,7 @@ const Chapter = ({ params, searchParams }) => {
           </div>
         </div>
         <div className="flex mx-5 text-2xl flex-wrap -m-4 justify-stretch">
-         { console.log(chapterText) }
+      
          {
           chapterText.map((para, index) => {
             return(

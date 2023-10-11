@@ -46,21 +46,7 @@ export default function AdminLayout({ children }) {
                         </ul>
                     </div>
                 </aside>
-                {/* <div className="navItem text-2xl text-center border-solid border-indigo-500 border-2 rounded-lg">
-                    <h1>Dashboard</h1>
-                </div>
-                <div className="navItem text-2xl text-center border-solid border-indigo-500 border-2 rounded-lg">
-                    <h1>Novels</h1>
-                </div>
-                <div className="navItem text-2xl text-center border-solid border-indigo-500 border-2 rounded-lg">
-                    <h1>Authors</h1>
-                </div>
-                <div className="navItem text-2xl text-center border-solid border-indigo-500 border-2 rounded-lg">
-                    <h1>Front Page</h1>
-                </div>
-                <div className="navItem text-2xl text-center border-solid border-indigo-500 border-2 rounded-lg">
-                    <h1>Setting</h1>
-                </div> */}
+               
             </div>
             <div className="adminMain h-full w-4/5 pb-8 bg-indigo-100">
 

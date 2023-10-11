@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import chaptersData from '../../../public/data/theMysteryOfMoonlight.json'
+import chaptersData from '@/public/data/theMysteryOfMoonlight.json'
 import novelsData from '@/public/data/novels.json'
 import Pagination from '@/components/Pagination'
 import { paginateData } from '@/utils/pagination'

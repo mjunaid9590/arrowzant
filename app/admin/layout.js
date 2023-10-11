@@ -37,6 +37,12 @@ export default function AdminLayout({ children }) {
                                     <span className="flex-1 ml-3 whitespace-nowrap">Setting</span>
                                 </Link>
                             </li>
+                            <li className="border-b-2">
+                                <Link href="admin/setting" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-indigo-200 dark:hover:bg-gray-700 group">
+                                   
+                                    <span className="flex-1 ml-3 whitespace-nowrap">Logout</span>
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                 </aside>

@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className} min-h-screen flex flex-col relative pb-36 md:pb-20`}>
-        <div className="flex-grow">
+        <div className="flex-grow h-full">
           <NavbarUnprotected />
           {children}
         </div>

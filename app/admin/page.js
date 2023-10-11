@@ -38,13 +38,14 @@ export default function Admin() {
             </div> */}
                 </div>
                 <div className="flex flex-row">
-                    
+
                     <div className='w-full px-4 flex flex-col items-center text-center'>
                         <div className=" w-full bg-red-200 p-4">
                             <h2 className='border-b py-2-b-2 border-gray-400 text-2xl'>Top Novels</h2>
-                            <table class="table-auto w-full border-spacing-y-4 border-collapse ">
+                            <table className="table-auto w-full border-spacing-y-4 border-collapse ">
                                 <thead>
                                     <tr>
+                                        <th className='border-b py-2 border-gray-400'>Ser #</th>
                                         <th className='border-b py-2 border-gray-400'>Novel</th>
                                         <th className='border-b py-2 border-gray-400'>Views</th>
                                         <th className='border-b py-2 border-gray-400'>Likes</th>
@@ -52,26 +53,33 @@ export default function Admin() {
                                 </thead>
                                 <tbody>
                                     <tr>
+                                        <td className='border-b py-2 border-gray-400'>1</td>
                                         <td className='border-b py-2 text-start  border-gray-400'>The Other Story</td>
                                         <td className='border-b py-2 border-gray-400'>20.1k</td>
                                         <td className='border-b py-2 border-gray-400'>3.2k</td>
                                     </tr>
                                     <tr>
+                                        <td className='border-b py-2 border-gray-400'>2</td>
                                         <td className='border-b py-2 text-start  border-gray-400'>Histroy Repeats</td>
                                         <td className='border-b py-2 border-gray-400'>20.1k</td>
                                         <td className='border-b py-2 border-gray-400'>3.2k</td>
                                     </tr>
                                     <tr>
+                                        <td className='border-b py-2 border-gray-400'>3</td>
                                         <td className='border-b py-2 text-start  border-gray-400'>In the Shadow of Evening</td>
                                         <td className='border-b py-2 border-gray-400'>20.1k</td>
                                         <td className='border-b py-2 border-gray-400'>3.2k</td>
                                     </tr>
                                     <tr>
+                                        <td className='border-b py-2 border-gray-400'>4</td>
+
                                         <td className='border-b py-2 text-start  border-gray-400'>Adventureland</td>
                                         <td className='border-b py-2 border-gray-400'>20.1k</td>
                                         <td className='border-b py-2 border-gray-400'>3.2k</td>
                                     </tr>
                                     <tr>
+                                        <td className='border-b py-2 border-gray-400'>5</td>
+
                                         <td className='border-b py-2 text-start  border-gray-400'>Explorations of Dora</td>
                                         <td className='border-b py-2 border-gray-400'>20.1k</td>
                                         <td className='border-b py-2 border-gray-400'>3.2k</td>
@@ -84,9 +92,10 @@ export default function Admin() {
                     <div className='w-full px-4 flex flex-col items-center text-center'>
                         <div className=" w-full bg-amber-200 p-4">
                             <h2 className='border-b py-2-b-2 border-gray-400 text-2xl'>Top Authors</h2>
-                            <table class="table-auto w-full border-spacing-y-4 border-collapse ">
+                            <table className="table-auto w-full border-spacing-y-4 border-collapse ">
                                 <thead>
                                     <tr>
+                                        <th className='border-b py-2 border-gray-400'>Ser #</th>
                                         <th className='border-b py-2 border-gray-400'>Author</th>
                                         <th className='border-b py-2 border-gray-400'>Views</th>
                                         <th className='border-b py-2 border-gray-400'>Likes</th>
@@ -94,26 +103,31 @@ export default function Admin() {
                                 </thead>
                                 <tbody>
                                     <tr>
+                                        <td className='border-b py-2 border-gray-400'>1</td>
                                         <td className='border-b py-2 text-start  border-gray-400'>Jane Martel</td>
                                         <td className='border-b py-2 border-gray-400'>20.1k</td>
                                         <td className='border-b py-2 border-gray-400'>3.2k</td>
                                     </tr>
                                     <tr>
+                                        <td className='border-b py-2 border-gray-400'>2</td>
                                         <td className='border-b py-2 text-start  border-gray-400'>John Watson</td>
                                         <td className='border-b py-2 border-gray-400'>20.1k</td>
                                         <td className='border-b py-2 border-gray-400'>3.2k</td>
                                     </tr>
                                     <tr>
+                                        <td className='border-b py-2 border-gray-400'>3</td>
                                         <td className='border-b py-2 text-start  border-gray-400'>Annie K</td>
                                         <td className='border-b py-2 border-gray-400'>20.1k</td>
                                         <td className='border-b py-2 border-gray-400'>3.2k</td>
                                     </tr>
                                     <tr>
+                                        <td className='border-b py-2 border-gray-400'>4</td>
                                         <td className='border-b py-2 text-start  border-gray-400'>Mike Milson</td>
                                         <td className='border-b py-2 border-gray-400'>20.1k</td>
                                         <td className='border-b py-2 border-gray-400'>3.2k</td>
                                     </tr>
                                     <tr>
+                                        <td className='border-b py-2 border-gray-400'>5</td>
                                         <td className='border-b py-2 text-start  border-gray-400'>K.S Shan</td>
                                         <td className='border-b py-2 border-gray-400'>20.1k</td>
                                         <td className='border-b py-2 border-gray-400'>3.2k</td>

@@ -19,7 +19,7 @@ export default function Home() {
         </div> */}
         <section className="text-gray-600 body-font w-full">
           <div className="category-container flex flex-col mt-4">
-            <CategoryHeadingLandingPage categoryTitle="Editor's Picks" />
+            <CategoryHeadingLandingPage categorySlug="editor-picks" categoryTitle="Editor's Picks" />
             <div className="category-short-list-container w-full  overflow-x-auto md:overflow-clip pb-10 hide-scroll-bar flex flex-wrap md:flex-row">
               <div className="flex flex-nowrap md:flex-wrap md:justify-evenly w-full " >
                 <div className='px-2 md:px-0'>
@@ -46,7 +46,7 @@ export default function Home() {
             </div>
           </div>
           <div className="category-container flex flex-col mt-8">
-            <CategoryHeadingLandingPage categoryTitle="Horror" />
+            <CategoryHeadingLandingPage categorySlug="horror" categoryTitle="Horror" />
             <div className="category-short-list-container w-full  overflow-x-auto md:overflow-clip pb-10 hide-scroll-bar flex flex-wrap md:flex-row">
               <div className="flex flex-nowrap md:flex-wrap md:justify-evenly w-full " >
                 <div className='px-2 md:px-0'>
@@ -73,7 +73,7 @@ export default function Home() {
             </div>
           </div>
           <div className="category-container flex flex-col mt-8">
-            <CategoryHeadingLandingPage categoryTitle="Romance" />
+            <CategoryHeadingLandingPage categorySlug="romance" categoryTitle="Romance" />
             <div className="category-short-list-container w-full  overflow-x-auto md:overflow-clip pb-10 hide-scroll-bar flex flex-wrap md:flex-row">
               <div className="flex flex-nowrap md:flex-wrap md:justify-evenly w-full " >
                 <div className='px-2 md:px-0'>
@@ -100,7 +100,7 @@ export default function Home() {
             </div>
           </div>
           <div className="category-container flex flex-col mt-8">
-            <CategoryHeadingLandingPage categoryTitle="Thriller" />
+            <CategoryHeadingLandingPage categorySlug="thriller" categoryTitle="Thriller" />
             <div className="category-short-list-container w-full  overflow-x-auto md:overflow-clip pb-10 hide-scroll-bar flex flex-wrap md:flex-row">
               <div className="flex flex-nowrap md:flex-wrap md:justify-evenly w-full " >
                 <div className='px-2 md:px-0'>
@@ -127,7 +127,7 @@ export default function Home() {
             </div>
           </div>
           <div className="category-container flex flex-col mt-8">
-            <CategoryHeadingLandingPage categoryTitle="Family" />
+            <CategoryHeadingLandingPage categorySlug="family" categoryTitle="Family" />
             <div className="category-short-list-container w-full  overflow-x-auto md:overflow-clip pb-10 hide-scroll-bar flex flex-wrap md:flex-row">
               <div className="flex flex-nowrap md:flex-wrap md:justify-evenly w-full " >
                 <div className='px-2 md:px-0'>
@@ -154,7 +154,7 @@ export default function Home() {
             </div>
           </div>
           <div className="category-container flex flex-col mt-8">
-            <CategoryHeadingLandingPage categoryTitle="Science Fiction" />
+            <CategoryHeadingLandingPage categorySlug="science-fiction" categoryTitle="Science Fiction" />
             <div className="category-short-list-container w-full  overflow-x-auto md:overflow-clip pb-10 hide-scroll-bar flex flex-wrap md:flex-row">
               <div className="flex flex-nowrap md:flex-wrap md:justify-evenly w-full " >
                 <div className='px-2 md:px-0'>

@@ -363,6 +363,7 @@ export default function NovelsDataTable() {
                     <select
                         value={genreFilter}
                         onChange={(e) => setGenreFilter(e.target.value)}
+                        className='p-2 border border-gray-300 rounded-md mr-5'
                     >
                         <option value="All">All Genres</option>
                         <option value="Mystery">Mystery</option>
@@ -374,8 +375,9 @@ export default function NovelsDataTable() {
                     <select
                         value={statusFilter}
                         onChange={(e) => setStatusFilter(e.target.value)}
+                        className='p-2 border border-gray-300 rounded-md mr-5'
                     >
-                        <option value="All">All Statuses</option>
+                        <option value="All">All Status</option>
                         <option value="completed">Completed</option>
                         <option value="Ongoing">Ongoing</option>
                     </select>

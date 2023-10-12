@@ -1,47 +1,45 @@
-"use client"
 import React from 'react'
 import NovelsDataTable from '@/components/NovelsDataTable';
-import { Disclosure } from '@headlessui/react'
-import { ChevronUpIcon } from '@heroicons/react/20/solid'
+import AuthorsTable from '@/components/AuthorsTable';
 
 const AdminAuthors = () => {
-
+    const sampleAuthorsData = [
+        {
+          name: "John Doe",
+          novelsCount: 5,
+          lastActivity: "2023-10-12 14:30:00",
+          isAuthorized: true,
+        },
+        {
+          name: "Jane Smith",
+          novelsCount: 10,
+          lastActivity: "2023-10-11 16:45:00",
+          isAuthorized: false,
+        },
+        {
+          name: "Alice Johnson",
+          novelsCount: 7,
+          lastActivity: "2023-10-10 12:15:00",
+          isAuthorized: true,
+        },
+        {
+          name: "Bob Brown",
+          novelsCount: 3,
+          lastActivity: "2023-10-09 18:20:00",
+          isAuthorized: true,
+        },
+        {
+          name: "Eve Wilson",
+          novelsCount: 2,
+          lastActivity: "2023-10-08 09:55:00",
+          isAuthorized: false,
+        },
+      ];
+      
 
     return (
         <div className="flex flex-col w-full mb-auto  h-full p-5">
-            <Disclosure>
-                {({ open }) => (
-                    <>
-                        <Disclosure.Button className="flex w-full justify-between rounded-lg bg-purple-100 px-4 py-2 text-left text-sm font-medium text-purple-900 hover:bg-purple-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
-                            <span>What is your refund policy?</span>
-                            <ChevronUpIcon
-                                className={`${open ? 'rotate-180 transform' : ''
-                                    } h-5 w-5 text-purple-500`}
-                            />
-                        </Disclosure.Button>
-                        <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
-                            If you're unhappy with your purchase for any reason, email us
-                            within 90 days and we'll refund you in full, no questions asked.
-                        </Disclosure.Panel>
-                    </>
-                )}
-            </Disclosure>
-            <Disclosure as="div" className="mt-2">
-                {({ open }) => (
-                    <>
-                        <Disclosure.Button className="flex w-full justify-between rounded-lg bg-purple-100 px-4 py-2 text-left text-sm font-medium text-purple-900 hover:bg-purple-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
-                            <span>Do you offer technical support?</span>
-                            <ChevronUpIcon
-                                className={`${open ? 'rotate-180 transform' : ''
-                                    } h-5 w-5 text-purple-500`}
-                            />
-                        </Disclosure.Button>
-                        <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
-                            No.
-                        </Disclosure.Panel>
-                    </>
-                )}
-            </Disclosure>
+            <AuthorsTable data={sampleAuthorsData} />
 
         </div>
     )

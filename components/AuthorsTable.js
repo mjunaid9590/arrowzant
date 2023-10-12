@@ -21,9 +21,7 @@ const AuthorsTable = ({ data }) => {
 
     return (
         <div className="w-full">
-            <div className='text-end pb-5'>
-            <Link href="/admin/authors/new" className="text-end text-xl py-2 px-2 rounded-lg mb-3 mr-3 bg-blue-500 text-white">+ Add New Author</Link>
-            </div>
+            
             <table className="min-w-full divide-y divide-gray-200">
                 <thead>
                     <tr>

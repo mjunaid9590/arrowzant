@@ -140,7 +140,7 @@ const LandingPage = () => {
 
       </FormGroup>
       <h2 className="text-2xl pb-4 pt-2">Select the Novels to show on the front page.</h2>
-      <div className="flex flex-col md:flex-grow md:flex-wrap">
+      <div className="flex flex-col md:flex-row md:flex-grow md:flex-wrap">
         {novelsData.map((categoryData, index) => (
         <div key={index} className=" w-full md:w-1/2 p-3 mb-8 border-r border-gray-400">
           <div className="flex flex-col md:flex-row justify-between border-b border-gray-600">

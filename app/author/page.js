@@ -8,7 +8,7 @@ const axios = require('axios');
 
 
 
-export default function Admin() {
+export default function Auther() {
     // console.log(novelsData)
     return (
         <>

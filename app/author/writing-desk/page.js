@@ -3,7 +3,7 @@ import NovelsDataTable from '@/components/NovelsDataTable';
 import DraftsTable from '@/components/DraftsTable';
 import Link from 'next/link';
 
-const AdminAuthors = () => {
+const WritingDesk = () => {
   const data = [
     {
       id: 1,
@@ -50,4 +50,4 @@ const AdminAuthors = () => {
     )
 }
 
-export default AdminAuthors
+export default WritingDesk

@@ -1,9 +1,10 @@
+
 import React from 'react'
 import AuthorNovelsDataTable from '@/components/AuthorNovelsDataTable';
 import AddIcon from '@mui/icons-material/Add';
 import Link from 'next/link';
 
-const AdminNovels = () => {
+const AuthorNovels = () => {
     
             
   return (
@@ -20,4 +21,4 @@ const AdminNovels = () => {
   )
 }
 
-export default AdminNovels
+export default AuthorNovels

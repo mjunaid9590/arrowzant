@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Setting = () => {
+const AuthorSetting = () => {
   return (
     <div>
       <section className="text-gray-600 body-font relative">
@@ -81,4 +81,4 @@ const Setting = () => {
   )
 }
 
-export default Setting
+export default AuthorSetting

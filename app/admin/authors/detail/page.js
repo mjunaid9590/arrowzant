@@ -74,72 +74,72 @@ const AuthorDetail = () => {
             <div>
                 <div className='flex flex-row justify-between'>
                     <h1 className={`${isEditing ? 'hidden' : ''} text-4xl pb-1 font-bold`}>John Doe</h1>
-                    <input type="text" className={`${!isEditing ? 'hidden' : ''} bg-indigo-200 border border-gray-400 rounded-lg text-3xl px-2`} value="John Doe" />
                     <button
                         onClick={(e) => { setIsEditing(!isEditing) }}
-                        className={`${isEditing ? 'hidden' : ''} text-end ml-10 text-xl p-1 px-5 rounded-lg mb-3 mr-3 bg-blue-500 text-white`}
+                        className={`${isEditing ? 'hidden' : ''} text-end ml-10 text-xl p-1 px-5 rounded-lg mb-3 mr-3 bg-blue-500 dark:bg-blue-800 text-white`}
                     >
                         Edit
                         <EditIcon />
 
                     </button>
+                    <input type="text" className={`${!isEditing ? 'hidden' : ''}  bg-indigo-200 dark:bg-indigo-800 border border-gray-400 rounded-lg text-2xl md:text-3xl px-2`} value="John Doe" />
+                    
+                </div>
+                <p className={`${isEditing ? 'hidden' : ''} text-justify `} >Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis amet provident doloribus? Maxime, fuga nostrum suscipit repellendus odit placeat voluptate hic explicabo illum aut dolor odio quibusdam? Culpa quibusdam recusandae amet libero ducimus unde quasi autem temporibus corporis molestiae reprehenderit eveniet explicabo ipsam ipsum itaque fugit optio vitae quam, ex cum eum! Aperiam non debitis libero officiis, doloribus pariatur nihil maxime, explicabo nulla dolorem facilis aspernatur dicta! A cum explicabo vel quis architecto nam beatae. Sed officia deleniti laborum, dolorem rem nemo! Quod distinctio labore laborum laboriosam dicta? Architecto ratione voluptatem in inventore quas porro distinctio praesentium similique voluptatibus officia?</p>
+                <textarea type="textaria" rows="8"  className={`${!isEditing ? 'hidden' : ''} w-full mt-4 bg-indigo-200 dark:bg-indigo-800 text-lg border border-gray-400 rounded-lg text-3xl px-2`} value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis amet provident doloribus? Maxime, fuga nostrum suscipit repellendus odit placeat voluptate hic explicabo illum aut dolor odio quibusdam? Culpa quibusdam recusandae amet libero ducimus unde quasi autem temporibus corporis molestiae reprehenderit eveniet explicabo ipsam ipsum itaque fugit optio vitae quam, ex cum eum! Aperiam non debitis libero officiis, doloribus pariatur nihil maxime, explicabo nulla dolorem facilis aspernatur dicta! A cum explicabo vel quis architecto nam beatae. Sed officia deleniti laborum, dolorem rem nemo! Quod distinctio labore laborum laboriosam dicta? Architecto ratione voluptatem in inventore quas porro distinctio praesentium similique voluptatibus official" />
                     <button
                         onClick={(e) => { setIsEditing(!isEditing) }}
-                            className={`${!isEditing ? 'hidden' : ''} text-end ml-10 text-xl p-1 px-5 rounded-lg mb-3 mr-3 bg-green-500 text-white`}
+                            className={`${!isEditing ? 'hidden' : ''} text-center mt-2 md:text-end ml-10 text-xl p-1 px-5 rounded-lg mb-3 mr-3 bg-green-500 text-white`}
                     >
                         Save
                         <SaveIcon />
 
                     </button>
-                    
-                </div>
-                <p className={`${isEditing ? 'hidden' : ''} text-justify `} >Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis amet provident doloribus? Maxime, fuga nostrum suscipit repellendus odit placeat voluptate hic explicabo illum aut dolor odio quibusdam? Culpa quibusdam recusandae amet libero ducimus unde quasi autem temporibus corporis molestiae reprehenderit eveniet explicabo ipsam ipsum itaque fugit optio vitae quam, ex cum eum! Aperiam non debitis libero officiis, doloribus pariatur nihil maxime, explicabo nulla dolorem facilis aspernatur dicta! A cum explicabo vel quis architecto nam beatae. Sed officia deleniti laborum, dolorem rem nemo! Quod distinctio labore laborum laboriosam dicta? Architecto ratione voluptatem in inventore quas porro distinctio praesentium similique voluptatibus officia?</p>
-                <textarea type="textaria" rows="8"  className={`${!isEditing ? 'hidden' : ''} w-full mt-4 bg-indigo-200 text-lg border border-gray-400 rounded-lg text-3xl px-2`} value="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis amet provident doloribus? Maxime, fuga nostrum suscipit repellendus odit placeat voluptate hic explicabo illum aut dolor odio quibusdam? Culpa quibusdam recusandae amet libero ducimus unde quasi autem temporibus corporis molestiae reprehenderit eveniet explicabo ipsam ipsum itaque fugit optio vitae quam, ex cum eum! Aperiam non debitis libero officiis, doloribus pariatur nihil maxime, explicabo nulla dolorem facilis aspernatur dicta! A cum explicabo vel quis architecto nam beatae. Sed officia deleniti laborum, dolorem rem nemo! Quod distinctio labore laborum laboriosam dicta? Architecto ratione voluptatem in inventore quas porro distinctio praesentium similique voluptatibus official" />
 
             </div>
             <h2 className='text-2xl py-4'>Total Chapters: 10 (completed: 6, ongoing: 4)</h2>
-            <div className="container px-4">
+            <div className="container px-4 overflow-x-auto">
 
-                <table className="divide-y divide-gray-200 mx-auto mt-3 w-full">
+                <table className="divide-y bg-indigo-200 dark:bg-indigo-800 divide-gray-200 mx-auto mt-3 w-full">
                     <thead>
                         <tr>
-                            <th className="px-3 py-3 bg-indigo-200 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                            <th className="px-3 py-3  text-left text-xs leading-4 font-medium  uppercase tracking-wider">
                                 Novel
                             </th>
-                            <th className="px-3 py-3 bg-indigo-200 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                            <th className="px-3 py-3  text-left text-xs leading-4 font-medium uppercase tracking-wider">
                                 No of Chapters
                             </th>
-                            <th className="px-3 py-3 bg-indigo-200 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                            <th className="px-3 py-3 text-left text-xs leading-4 font-medium uppercase tracking-wider">
                                 Status
                             </th>
-                            <th className="px-3 py-3 bg-indigo-200"></th>
-                            <th className="px-3 py-3 bg-indigo-200"></th>
+                            <th className="px-3 py-3 "></th>
+                            <th className="px-3 py-3 "></th>
                         </tr>
                     </thead>
-                    <tbody className="bg-white divide-y divide-gray-200 bg-indigo-50">
+                    <tbody className=" divide-y divide-gray-200 bg-indigo-50 dark:bg-indigo-800">
                         {authorsNovels.map((novel, index) => (
                             <tr key={index}>
-                                <td className="px-6 py-4 whitespace-no-wrapn bg-indigo-100">
+                                <td className="px-6 py-4 whitespace-no-wrapn">
                                     {novel.name}
                                 </td>
-                                <td className="px-6 py-4 whitespace-no-wrapn bg-indigo-100">
+                                <td className="px-6 py-4 whitespace-no-wrapn ">
                                     {novel.chapters}
                                 </td>
-                                <td className="px-6 py-4 whitespace-no-wrapn bg-indigo-100">
+                                <td className="px-6 py-4 whitespace-no-wrapn ">
                                     {novel.status}
                                 </td>
-                                <td className="px-6 py-4 whitespace-no-wrap text-right bg-indigo-100">
+                                <td className="px-6 py-4 whitespace-no-wrap text-right">
                                     <button
                                         // onClick={() => handleEditClick(author)}
-                                        className={`text-white p-2 ${novel.published == 'published' ? 'bg-red-500 hover:bg-red-600' : 'bg-green-500 hover:bg-green-600'}  rounded-lg cursor-pointer`}
+                                        className={`text-white p-2 ${novel.published == 'published' ? 'bg-red-500 dark:bg-red-800 hover:bg-red-600' : 'bg-green-500 dark:bg-green-800 hover:bg-green-600'}  rounded-lg cursor-pointer`}
                                     >
                                         {(novel.published == 'published') ? 'Unpublish' : 'Publish'}
                                     </button>
                                 </td>
-                                <td className="px-6 py-4 whitespace-no-wrap text-right bg-indigo-100">
+                                <td className="px-6 py-4 whitespace-no-wrap text-right bg-indigo-100 dark:bg-indigo-800">
                                     <button
                                         // onClick={() => handleEditClick(author)}
-                                        className="text-white p-2 bg-red-500 hover:bg-red-600 rounded-lg cursor-pointer"
+                                        className="text-white p-2 bg-red-500 dark:bg-red-800 hover:bg-red-600 rounded-lg cursor-pointer"
                                     >
                                         Delete
                                     </button>

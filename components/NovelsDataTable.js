@@ -351,15 +351,15 @@ export default function NovelsDataTable() {
     };
     return (
         <Paper sx={{ width: '100%', overflow: 'hidden' }}>
-            <div className="search-and-filters p-5 flex flex-row justify-between">
+            <div className="search-and-filters  p-5 flex flex-col md:flex-row justify-between">
                 <input
                     type="text"
                     placeholder="Search by Novel Name"
-                    className='p-2 border rounded-lg'
+                    className='p-2 border rounded-lg mb-3'
                     // value={searchQuery}
                     // onChange={(e) => {console.log(e.target.value); setSearchQuery(e.target.value)}}
                 />
-                <div>
+                <div className='flex flex-row'>
                     <select
                         value={genreFilter}
                         onChange={(e) => setGenreFilter(e.target.value)}

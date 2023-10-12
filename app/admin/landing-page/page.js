@@ -140,19 +140,19 @@ const LandingPage = () => {
 
       </FormGroup>
       <h2 className="text-2xl pb-4 pt-2">Select the Novels to show on the front page.</h2>
-      <div className="flex flex-grow flex-wrap">
+      <div className="flex flex-col md:flex-grow md:flex-wrap">
         {novelsData.map((categoryData, index) => (
-        <div key={index} className="w-1/2 p-3 mb-8 border-r border-gray-400">
-          <div className="flex flex-row justify-between border-b border-gray-600">
-            <h2 className='text-3xl pb-2 font-semibold'>
+        <div key={index} className=" w-full md:w-1/2 p-3 mb-8 border-r border-gray-400">
+          <div className="flex flex-col md:flex-row justify-between border-b border-gray-600">
+            <h2 className='text-3xl pb-2  font-semibold'>
               {categoryData.category}
             </h2>
-            <button onClick={() => openModal(categoryData.category)} className='text-end my-auto text-md p-1 px-3 rounded-lg bg-green-500 hover:bg-green-600 text-white'><AddIcon /> Add Novel</button>
+            <button onClick={() => openModal(categoryData.category)} className='text-center md:text-end my-auto text-md p-1 px-3 rounded-lg bg-green-500 hover:bg-green-600 dark:bg-green-800 text-white'><AddIcon /> Add Novel</button>
           </div>
           {categoryData.novels.map((novel, novelIndex) => (
-            <div key={novelIndex} className="border-b border-gray-400 flex flex-row p-2">
-              <h3 className='text-xl w-5/6 my-auto'>{novel}</h3>
-              <button className='text-end my-auto w-1/6 ml-10 text-md p-1 px-3 rounded-lg bg-red-500 hover:bg-red-600 text-white'>Remove</button>
+            <div key={novelIndex} className="border-b border-gray-400 flex flex-row justify-between p-2">
+              <h3 className='text-xl md:w-5/6 my-auto'>{novel}</h3>
+              <button className='text-end my-auto md:w-1/6 ml-10 text-md p-1 px-3 rounded-lg bg-red-500 dark:bg-red-800 hover:bg-red-600 text-white'>Remove</button>
             </div>
           ))}
         </div>

@@ -39,6 +39,7 @@ const AdminAuthors = () => {
 
     return (
         <div className="flex flex-col w-full mb-auto  h-full p-5">
+          <h1 className='text-3xl p-5'>Authors</h1>
             <AuthorsTable data={sampleAuthorsData} />
 
         </div>

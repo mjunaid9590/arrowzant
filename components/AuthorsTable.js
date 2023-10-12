@@ -18,27 +18,26 @@ const AuthorsTable = ({ data }) => {
     const handleAuthorizeClick = (author) => {
         // Implement authorization logic here
     };
-
     return (
-        <div className="w-full">
+        <div className="w-full overflow-x-auto">
             
             <table className="min-w-full divide-y divide-gray-200">
-                <thead>
+                <thead className='bg-gray-50 dark:bg-gray-700 text-gray-500 dark:text-gray-200'>
                     <tr>
-                        <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                        <th className="px-6 py-3  text-left text-xs leading-4 font-medium uppercase tracking-wider">
                             Author
                         </th>
-                        <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                        <th className="px-6 py-3  text-left text-xs leading-4 font-medium uppercase tracking-wider">
                             No of Novels
                         </th>
-                        <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                        <th className="px-6 py-3  text-left text-xs leading-4 font-medium  uppercase tracking-wider">
                             Last Activity Time
                         </th>
-                        <th className="px-6 py-3 bg-gray-50"></th>
-                        <th className="px-6 py-3 bg-gray-50"></th>
+                        <th className="px-6 py-3"></th>
+                        <th className="px-6 py-3"></th>
                     </tr>
                 </thead>
-                <tbody className="bg-white divide-y divide-gray-200">
+                <tbody className="bg-white dark:bg-gray-900 divide-y divide-gray-200">
                     {data.map((author, index) => (
                         <tr key={index}>
                             <td className="px-6 py-4 whitespace-no-wrap">

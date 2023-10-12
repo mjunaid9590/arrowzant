@@ -2,16 +2,22 @@
 import Link from 'next/link'
 import React from 'react'
 import { Fragment } from 'react'
-
+import { usePathname } from 'next/navigation';
+import LogoutIcon from '@mui/icons-material/Logout';
 import { useState } from 'react';
-// import DropDownSimple from './DropDownSimple';
-// import { MenuList, StyledListbox, MenuItem } from '@mui/material';
-// import { Menu } from '@headlessui/react';
 
-const Navbar = () => {
+
+const NavbarAuthor = () => {
+    const currentRoute = usePathname();
+    // Define a function to check if a link is active
+    const isActive = (href) => {
+        console.log(currentRoute)
+        return currentRoute === href ? true : false;
+    };
     const [isDropdownOpen, setDropdownOpen] = useState(false);
     const [isSearchOpen, setIsSearchOpen] = useState(false);
     const [selectedOption, setSelectedOption] = useState('Home'); // Default selected option
+    console.log("Running bhai running")
     return (
         <nav className="bg-white border-gray-200 dark:bg-gray-900 shadow-xl overflow-visible">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -132,37 +138,29 @@ const Navbar = () => {
                         </div>
                         <ul className={`flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 ${!isDropdownOpen ? 'hidden md:flex md:flex-row' : ''}`}>
                             <li className=' my-auto'>
-                                <a
-                                    href="#"
-                                    className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
-                                    aria-current="page"
-                                >
-                                    Home
-                                </a>
+                                <Link href="/author" className={`flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-indigo-200 dark:hover-bg-gray-700 group ${isActive('/author') ? 'bg-indigo-300' : ''}`}>
+                                    <span className="ml-3">Dashboard</span>
+                                </Link>
                             </li>
                             <li>
-                                <Link
-                                    href="/genre"
-                                    className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                                >
-                                    Category
+                                <Link href="/author/novels" className={`flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-indigo-200 dark:hover:bg-gray-700 group ${isActive('/author/novels') ? 'bg-indigo-300' : ''}`}>
+                                    <span className="flex-1 ml-3 whitespace-nowrap">My Novels</span>
                                 </Link>
                             </li>
                             <li className=' my-auto'>
-                                <a
-                                    href="/about-us"
-                                    className="aligh-middle block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                                >
-                                    About
-                                </a>
+                                <Link href="/author/writing-desk" className={`flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-indigo-200 dark:hover:bg-gray-700 group ${isActive('/author/writing-desk') ? 'bg-indigo-300' : ''}`}>
+                                    <span className="flex-1 ml-3 whitespace-nowrap">Writing Desk</span>
+                                </Link>
                             </li>
                             <li className=' my-auto'>
-                                <a
-                                    href="/contact-us"
-                                    className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                                >
-                                    Contact Us
-                                </a>
+                                <Link href="/author/setting" className={`flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-indigo-200 dark:hover-bg-gray-700 group ${isActive('/author/setting') ? 'bg-indigo-300' : ''}`}>
+                                    <span className="flex-1 ml-3 whitespace-nowrap">Setting</span>
+                                </Link>
+                            </li>
+                            <li className=' my-auto'>
+                            <Link href="#" className={`flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-indigo-200 dark:hover-bg-gray-700 group `}>
+                                <span className="flex-1 ml-3 whitespace-nowrap"> <LogoutIcon /> Logout</span>
+                            </Link>
                             </li>
                         </ul>
                     </div>
@@ -170,51 +168,7 @@ const Navbar = () => {
             </div>
         </nav>
 
-        // <div className='shadow-md md:sticky top-0 backdrop-blur-lg'>
-        //     <header className="text-gray-600 body-font">
-        //         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center md:justify-between">
-        //             <Link
-        //                 href="/"
-        //                 className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-        //                 <svg
-        //                     xmlns="http://www.w3.org/2000/svg"
-        //                     fill="none"
-        //                     stroke="currentColor"
-        //                     strokeLinecap="round"
-        //                     strokeLinejoin="round"
-        //                     strokeWidth={2}
-        //                     className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
-        //                     viewBox="0 0 24 24"
-        //                 >
-        //                     <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-        //                 </svg>
-        //                 <span className="ml-3 text-xl">ArrowzanT</span>
-        //             </Link>
-        //             <div className='flex flex-row'>
-        //                 <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-        //                     <Link href="/about-us" className="mr-5 hover:text-gray-900">About Us</Link>
-        //                     <Link href="/contact-us" className="mr-5 hover:text-gray-900">Contact Us</Link>
-        //                 </nav>
-        //                 <button className="inline-flex my-auto items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base ">
-        //                     Login
-        //                     <svg
-        //                         fill="none"
-        //                         stroke="currentColor"
-        //                         strokeLinecap="round"
-        //                         strokeLinejoin="round"
-        //                         strokeWidth={2}
-        //                         className="w-4 h-4 ml-1"
-        //                         viewBox="0 0 24 24"
-        //                     >
-        //                         <path d="M5 12h14M12 5l7 7-7 7" />
-        //                     </svg>
-        //                 </button>
-        //             </div>
-        //         </div>
-        //     </header>
-
-        // </div>
     )
 }
 
-export default Navbar
+export default NavbarAuthor

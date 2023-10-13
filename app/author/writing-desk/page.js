@@ -34,20 +34,22 @@ const WritingDesk = () => {
       isPublished: false,
     },
   ];
-  
+
   // Pass this sampleData to your DraftsTable component
-  
-      
 
-    return (
-        <div className="flex flex-col w-full mb-auto  h-full p-5">
-          <div className='text-end pb-5'>
-            <Link href="/author/writing-desk/new" className="text-end text-xl py-2 px-2 rounded-lg mb-3 mr-3 bg-blue-500 text-white">+ Make New Draft</Link>
-            </div>
-            <DraftsTable data={data} />
 
-        </div>
-    )
+
+  return (
+    <div className="flex flex-col w-full mb-auto  h-full p-5">
+      <h1 className='text-3xl p-5 text-center text-black'>Writing Desk</h1>
+
+      <div className='md:text-end pb-5 mt-2'>
+        <Link href="/author/writing-desk/new" className="text-end text-xl py-2 px-2 rounded-lg mb-3 mr-3 bg-blue-500 hover:bg-blue-700 text-white">+ Make New Draft</Link>
+      </div>
+      <DraftsTable data={data} />
+
+    </div>
+  )
 }
 
 export default WritingDesk

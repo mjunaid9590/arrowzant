@@ -24,7 +24,7 @@ const DraftsTable = ({ data }) => {
     // Implement publish logic here
   };
   return (
-    <div className="w-full">
+    <div className="w-full overflow-x-auto">
       <table className="min-w-full divide-y divide-gray-200">
         <thead>
           <tr>
@@ -48,30 +48,35 @@ const DraftsTable = ({ data }) => {
               <td className="px-3 py-4 whitespace-no-wrap">{draft.novelName}</td>
               <td className="px-3 py-4 whitespace-no-wrap">{draft.chapterName}</td>
               <td className="px-3 py-4 whitespace-no-wrap">{draft.lastUpdatedTime}</td>
-              
+
               <td className="px-3 py-4 whitespace-no-wrap text-right">
-                <button
-                  onClick={() => handleEditClick(draft)}
+                <Link
+                  href='/author/writing-desk/edit'
+
+                  // onClick={() => handleEditClick(draft)}
                   className="p-2 px-4 text-white rounded-lg bg-blue-500 hover:bg-blue-700 cursor-pointer"
                 >
                   Edit
-                </button>
+                </Link>
               </td>
               <td className="px-3 py-4 whitespace-no-wrap text-right">
-                <button
-                  onClick={() => handleDeleteClick(draft)}
+                <Link
+                  href='#'
+
+                  // onClick={() => handleDeleteClick(draft)}
                   className="p-2 text-white rounded-lg bg-red-500 hover:bg-red-700 cursor-pointer"
                 >
                   Delete
-                </button>
+                </Link>
               </td>
               <td className="px-3 py-4 whitespace-no-wrap text-right">
-                <button
-                  onClick={() => handlePublishClick(draft)}
-                  className={`p-2 text-white rounded-lg hover:text-red-900 cursor-pointer bg-green-500`}
+                <Link
+                  href='#'
+                  // onClick={() => handlePublishClick(draft)}
+                  className={`p-2 text-white rounded-lg hover:bg-green-700 cursor-pointer bg-green-500`}
                 >
                   Publish
-                </button>
+                </Link>
               </td>
             </tr>
           ))}

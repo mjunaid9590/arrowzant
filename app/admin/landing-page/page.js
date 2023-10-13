@@ -1,5 +1,5 @@
 "use client"
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import AddIcon from '@mui/icons-material/Add';
 import { FormGroup, FormControlLabel, Checkbox } from '@mui/material';
 import AddModalLandingPage from '@/components/AddModalLandingPage';
@@ -120,13 +120,15 @@ const LandingPage = () => {
     closeModal();
   };
 
-  
-  
-  
+
+
+
   return (
     <div className='p-5'>
-      <h2 className="text-2xl pb-2">Select the Genres/Categories to show on the front page.</h2>
-      <FormGroup className='flex flex-row pb-4'>
+      <h1 className='text-3xl p-5 text-center text-black'>Landing Page Settings</h1>
+
+      <h2 className="text-2xl pb-4 pt-2 md:p-5 md:pb-2">Select the Genres/Categories to show on the front page.</h2>
+      <FormGroup className='flex flex-row pb-4 md:p-5'>
         <FormControlLabel control={<Checkbox defaultChecked />} label="Editor's Picks" />
         <FormControlLabel control={<Checkbox defaultChecked />} label="Horror" />
         <FormControlLabel control={<Checkbox defaultChecked />} label="Romance" />
@@ -139,30 +141,30 @@ const LandingPage = () => {
         <FormControlLabel control={<Checkbox defaultChecked />} label="Superhero" />
 
       </FormGroup>
-      <h2 className="text-2xl pb-4 pt-2">Select the Novels to show on the front page.</h2>
-      <div className="flex flex-col md:flex-row md:flex-grow md:flex-wrap">
+      <h2 className="text-2xl pb-4 pt-2 md:p-5">Select the Novels to show on the front page.</h2>
+      <div className="flex flex-col md:flex-row md:flex-grow md:flex-wrap md:p-5">
         {novelsData.map((categoryData, index) => (
-        <div key={index} className=" w-full md:w-1/2 p-3 mb-8 border-r border-gray-400">
-          <div className="flex flex-col md:flex-row justify-between border-b border-gray-600">
-            <h2 className='text-3xl pb-2  font-semibold'>
-              {categoryData.category}
-            </h2>
-            <button onClick={() => openModal(categoryData.category)} className='text-center md:text-end my-auto text-md p-1 px-3 rounded-lg bg-green-500 hover:bg-green-600 dark:bg-green-800 text-white'><AddIcon /> Add Novel</button>
-          </div>
-          {categoryData.novels.map((novel, novelIndex) => (
-            <div key={novelIndex} className="border-b border-gray-400 flex flex-row justify-between p-2">
-              <h3 className='text-xl md:w-5/6 my-auto'>{novel}</h3>
-              <button className='text-end my-auto md:w-1/6 ml-10 text-md p-1 px-3 rounded-lg bg-red-500 dark:bg-red-800 hover:bg-red-600 text-white'>Remove</button>
+          <div key={index} className=" w-full md:w-1/2 p-3 mb-8 border-r border-gray-400">
+            <div className="flex flex-col md:flex-row justify-between border-b border-gray-600">
+              <h2 className='text-3xl pb-2  font-semibold'>
+                {categoryData.category}
+              </h2>
+              <button onClick={() => openModal(categoryData.category)} className='text-center md:text-end my-auto text-md p-1 px-3 rounded-lg bg-green-500 hover:bg-green-600 dark:bg-green-800 text-white'><AddIcon /> Add Novel</button>
             </div>
-          ))}
-        </div>
-      ))}
-      <AddModalLandingPage
-        isOpen={isModalOpen}
-        onRequestClose={closeModal}
-        novels={novelsData.find((category) => category.category === selectedCategory)?.novels || []}
-      />
-        
+            {categoryData.novels.map((novel, novelIndex) => (
+              <div key={novelIndex} className="border-b border-gray-400 flex flex-row justify-between p-2">
+                <h3 className='text-xl md:w-5/6 my-auto'>{novel}</h3>
+                <button className='text-end my-auto md:w-1/6 ml-10 text-md p-1 px-3 rounded-lg bg-red-500 dark:bg-red-800 hover:bg-red-600 text-white'>Remove</button>
+              </div>
+            ))}
+          </div>
+        ))}
+        <AddModalLandingPage
+          isOpen={isModalOpen}
+          onRequestClose={closeModal}
+          novels={novelsData.find((category) => category.category === selectedCategory)?.novels || []}
+        />
+
 
       </div>
 

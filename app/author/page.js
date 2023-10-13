@@ -12,24 +12,24 @@ export default function Auther() {
     // console.log(novelsData)
     return (
         <>
-            <div className="flex flex-col w-full mb-auto  h-full">
-                <div className="flex flex-row text-center h-40">
-                    <div className="flex flex-row w-full p-4 text-center items-center justify-evenly">
-                        <div className='bg-green-200 w-1/5 pb-4 rounded-lg border-2 border-gray-300 shadow-lg'>
-                            <h4 className='py-2 text-3xl'>View Count</h4>
-                            <h2 className=' bg-green-300 text-2xl'>188.1k</h2>
+            <div className="flex flex-col w-full mb-auto  h-full dark:text-indigo-100">
+                <div className="flex flex-row text-center md:h-40">
+                    <div className="flex flex-wrap md:flex-row md:w-full p-4 text-center items-center justify-evenly">
+                        <div className='bg-green-200 dark:bg-green-800 w-1/2 md:w-1/5 pb-4 rounded-lg border-2 border-gray-300 dark:border-gray-900 shadow-lg'>
+                            <h4 className='py-2 md:text-3xl'>View Count</h4>
+                            <h2 className=' bg-green-300 dark:bg-green-900 dark:bg-green-900 text-2xl'>188.1k</h2>
                         </div>
-                        <div className='bg-orange-200 w-1/5 pb-4 rounded-lg border-2 border-gray-300 shadow-lg'>
-                            <h4 className='py-2 text-3xl px-5'>Likes</h4>
-                            <h2 className='px-10 bg-orange-300 text-2xl'>33.2k</h2>
+                        <div className='bg-orange-200 dark:bg-orange-800 w-1/2 md:w-1/5 pb-4 rounded-lg border-2 border-gray-300 dark:border-gray-900 shadow-lg'>
+                            <h4 className='py-2 md:text-3xl px-5'>Likes</h4>
+                            <h2 className='md:px-10 bg-orange-300 dark:bg-orange-900 text-2xl'>33.2k</h2>
                         </div>
-                        <div className='bg-blue-200 w-1/5 pb-4 rounded-lg border-2 border-gray-300 shadow-lg'>
-                            <h4 className='py-2 text-3xl'>Stat 1</h4>
-                            <h2 className=' bg-blue-300 text-2xl'>xxxxxx</h2>
+                        <div className='bg-blue-200 dark:bg-blue-800 w-1/2 md:w-1/5 pb-4 rounded-lg border-2 border-gray-300 dark:border-gray-900 shadow-lg'>
+                            <h4 className='py-2 md:text-3xl'>Stat 1</h4>
+                            <h2 className=' bg-blue-300 dark:bg-blue-900 text-2xl'>xxxxxx</h2>
                         </div>
-                        <div className='bg-purple-200 w-1/5 pb-4 rounded-lg border-2 border-gray-300 shadow-lg'>
-                            <h4 className='py-2 text-3xl px-5'>Stat 2</h4>
-                            <h2 className='px-10 bg-purple-300 text-2xl'>xxxxxx</h2>
+                        <div className='bg-purple-200 dark:bg-purple-800 w-1/2 md:w-1/5 pb-4 rounded-lg border-2 border-gray-300 dark:border-gray-900 shadow-lg'>
+                            <h4 className='py-2 md:text-3xl px-5'>Stat 2</h4>
+                            <h2 className='md:px-10 bg-purple-300 dark:bg-purple-900 text-2xl'>xxxxxx</h2>
                         </div>
                     </div>
                     {/* <div className="flex flex-col w-1/2 p-4 bg-red-300">
@@ -37,9 +37,10 @@ export default function Auther() {
                 <div>Stat 2</div>
             </div> */}
                 </div>
+                <div className="flex flex-col md:flex-row">
 
-                    <div className='w-3/4 px-auto mx-auto flex flex-col items-center text-center'>
-                        <div className=" w-full bg-red-200 p-4">
+                    <div className='md:w-full mx-auto px-4 pb-4  flex flex-col items-center text-center'>
+                        <div className=" w-full bg-red-200 dark:bg-red-900 p-4 shadow-xl">
                             <h2 className='border-b py-2-b-2 border-gray-400 text-2xl'>My Top Novels</h2>
                             <table className="table-auto w-full border-spacing-y-4 border-collapse ">
                                 <thead>
@@ -88,7 +89,7 @@ export default function Auther() {
                         </div>
 
                     </div>
-                    
+                </div>
             </div>
 
         </>

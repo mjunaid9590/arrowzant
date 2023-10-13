@@ -24,32 +24,32 @@ const AuthorsTable = ({ data }) => {
             <table className="min-w-full divide-y divide-gray-200">
                 <thead className='bg-gray-50 dark:bg-gray-700 text-gray-500 dark:text-gray-200'>
                     <tr>
-                        <th className="px-6 py-3  text-left text-xs leading-4 font-medium uppercase tracking-wider">
+                        <th className="px-3 md:px-6 py-3  text-left text-xs leading-4 font-medium uppercase tracking-wider">
                             Author
                         </th>
-                        <th className="px-6 py-3  text-left text-xs leading-4 font-medium uppercase tracking-wider">
+                        <th className="px-3 md:px-6 py-3  text-left text-xs leading-4 font-medium uppercase tracking-wider">
                             No of Novels
                         </th>
-                        <th className="px-6 py-3  text-left text-xs leading-4 font-medium  uppercase tracking-wider">
+                        <th className="px-3 md:px-6 py-3  text-left text-xs leading-4 font-medium  uppercase tracking-wider">
                             Last Activity Time
                         </th>
-                        <th className="px-6 py-3"></th>
-                        <th className="px-6 py-3"></th>
+                        <th className="px-3 md:px-6 py-3"></th>
+                        <th className="px-3 md:px-6 py-3"></th>
                     </tr>
                 </thead>
                 <tbody className="bg-white dark:bg-gray-900 divide-y divide-gray-200">
                     {data.map((author, index) => (
                         <tr key={index}>
-                            <td className="px-6 py-4 whitespace-no-wrap">
+                            <td className="px-3 md:px-6 py-4 whitespace-no-wrap">
                                 {author.name}
                             </td>
-                            <td className="px-6 py-4 whitespace-no-wrap">
+                            <td className="px-3 md:px-6 py-4 whitespace-no-wrap">
                                 {author.novelsCount}
                             </td>
-                            <td className="px-6 py-4 whitespace-no-wrap">
+                            <td className="px-3 md:px-6 py-4 whitespace-no-wrap">
                                 {author.lastActivity}
                             </td>
-                            <td className="px-6 py-4 whitespace-no-wrap text-right">
+                            <td className="px-3 md:px-6 py-4 whitespace-no-wrap text-right">
                                 <Link
                                     href='/admin/authors/detail'
                                     className="text-indigo-600 hover:text-indigo-900 cursor-pointer"
@@ -58,7 +58,7 @@ const AuthorsTable = ({ data }) => {
                                 </Link>
                             </td>
                             
-                            <td className="px-6 py-4 whitespace-no-wrap text-right">
+                            <td className="px-3 md:px-6 py-4 whitespace-no-wrap text-right">
                                 <button
                                     onClick={() => handleAuthorizeClick(author)}
                                     className={`p-2  text-white rounded-lg text hover:text-red-900 cursor-pointer ${author.isAuthorized ? 'bg-red-500' : 'bg-green-500'}`}

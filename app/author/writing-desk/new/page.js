@@ -35,15 +35,12 @@ const NewDraft = () => {
                         <div className="flex flex-col justify-evenly -m-2 bg-indigo-200 py-5 rounded-2xl">
                             <div className="p-2 w-3/4 mx-auto">
                                 <div className="flex flex-col">
-                                    <label htmlFor="novel" className="my-auto py-2 text-2xl leading-7 text-gray-600">
-                                        Novel
-                                    </label>
+                                    
                                     <Autocomplete
                                         id="novel"
                                         options={['Novel 1', 'Novel 2', 'Novel 3']} // Replace with your novel data
                                         value={novel}
                                         onChange={handleNovelChange}
-                                        className='bg-indigo-300'
                                         renderInput={(params) => (
                                             <TextField {...params} variant="outlined" label="Select a Novel" />
                                         )}

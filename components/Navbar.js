@@ -16,7 +16,7 @@ const Navbar = () => {
     const currentRoute = usePathname();
     // Define a function to check if a link is active
     const isActiveClass = (href) => {
-        return currentRoute === href ? 'text-indigo-50 md:text-indigo-700' : '';
+        return currentRoute === href ? 'text-indigo-700' : '';
     };
     return (
         <nav className="bg-white border-gray-200 dark:bg-gray-900 shadow-xl overflow-visible">

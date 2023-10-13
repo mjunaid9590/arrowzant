@@ -12,7 +12,7 @@ const AuthorNovels = () => {
       <div className="flex flex-col md:flex-row justify-between">
         <h1 className='text-3xl p-4 text-center'>My Novels: </h1>
 
-        <Link href='/author/novels/new' className='text-end my-auto text-md p-2 md:p-3 px-auto mb-3 md:mb-auto mr-auto md:mr-4 rounded-lg bg-green-500 hover:bg-green-600 text-white'><AddIcon /> Start New Novel</Link>
+        <Link href='/author/novels/new' className='mt-4 text-end my-auto text-md p-2 md:p-3 px-auto mb-3 md:mb-auto mr-auto md:mr-4 rounded-lg bg-green-500 hover:bg-green-600 text-white'><AddIcon /> Start New Novel</Link>
       </div>
       <AuthorNovelsDataTable />
 

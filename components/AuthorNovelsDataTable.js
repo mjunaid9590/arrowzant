@@ -351,7 +351,7 @@ export default function AuthorNovelsDataTable() {
     return (
         <Paper sx={{ width: '100%', overflow: 'hidden' }}>
             
-            <TableContainer sx={{ maxHeight: 440 }}>
+            <TableContainer sx={{ maxHeight: 440,  }}>
                 <Table stickyHeader aria-label="sticky table">
                     <TableHead className='font-bold'>
                         <TableRow>

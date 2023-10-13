@@ -6,7 +6,7 @@ const NewAuthor = () => {
             <section className="text-gray-600 body-font relative">
                 <div className="container px-5 py-10 mx-auto">
                     <div className="flex flex-col w-full mb-8">
-                        <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+                        <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 dark:text-indigo-100">
                             Add New Author
                         </h1>
                     </div>

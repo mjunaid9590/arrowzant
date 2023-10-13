@@ -37,7 +37,7 @@ export default function Auther() {
                 <div>Stat 2</div>
             </div> */}
                 </div>
-                <div className="flex flex-col md:flex-row">
+                <div className="flex flex-col md:flex-row mx-auto w-1/2">
 
                     <div className='md:w-full mx-auto px-4 pb-4  flex flex-col items-center text-center'>
                         <div className=" w-full bg-red-200 dark:bg-red-900 p-4 shadow-xl">

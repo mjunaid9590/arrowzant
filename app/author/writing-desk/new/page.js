@@ -24,15 +24,15 @@ const NewDraft = () => {
 
     return (
         <div>
-            <section className="text-gray-600 body-font relative">
+            <section className="text-gray-600 dark:text-indigo-100 body-font relative">
                 <div className="container px-5 py-10 mx-auto">
                     <div className="flex flex-col w-full mb-8">
-                        <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+                        <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 dark:text-indigo-100">
                             Add New Draft
                         </h1>
                     </div>
                     <div>
-                        <div className="flex flex-col justify-evenly -m-2 bg-indigo-200 py-5 rounded-2xl">
+                        <div className="flex flex-col justify-evenly -m-2 bg-indigo-200 dark:bg-gray-700 py-5 rounded-2xl">
                             <div className="p-2 w-3/4 mx-auto">
                                 <div className="flex flex-col">
                                     
@@ -42,7 +42,7 @@ const NewDraft = () => {
                                         value={novel}
                                         onChange={handleNovelChange}
                                         renderInput={(params) => (
-                                            <TextField {...params} variant="outlined" label="Select a Novel" />
+                                            <TextField {...params} variant="outlined" label="Select a Novel" className='dark:text-indigo-100' />
                                         )}
                                     />
                                 </div>

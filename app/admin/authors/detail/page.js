@@ -136,10 +136,10 @@ const AuthorDetail = () => {
                                         {(novel.published == 'published') ? 'Unpublish' : 'Publish'}
                                     </button>
                                 </td>
-                                <td className="px-6 py-4 whitespace-no-wrap text-right bg-indigo-100 dark:bg-indigo-800">
+                                <td className="px-6 py-4 whitespace-no-wrap text-right ">
                                     <button
                                         // onClick={() => handleEditClick(author)}
-                                        className="text-white p-2 bg-red-500 dark:bg-red-800 hover:bg-red-600 rounded-lg cursor-pointer"
+                                        className="text-white p-2 bg-red-500 dark:bg-red-800 hover:bg-red-600 rounded-lg cursor-pointer bg-indigo-100 dark:bg-indigo-800"
                                     >
                                         Delete
                                     </button>

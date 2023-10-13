@@ -138,27 +138,27 @@ const NavbarAuthor = () => {
                         </div>
                         <ul className={`flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 ${!isDropdownOpen ? 'hidden md:flex md:flex-row' : ''}`}>
                             <li className=' my-auto'>
-                                <Link href="/author" className={`flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-indigo-200 dark:hover-bg-gray-700 group ${isActive('/author') ? 'bg-indigo-300' : ''}`}>
+                                <Link href="/author" onClick={()=>{setDropdownOpen(!isDropdownOpen)}} className={`flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-indigo-200 dark:hover-bg-gray-700 group ${isActive('/author') ? 'bg-indigo-300' : ''}`}>
                                     <span className="ml-3">Dashboard</span>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/author/novels" className={`flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-indigo-200 dark:hover:bg-gray-700 group ${isActive('/author/novels') ? 'bg-indigo-300' : ''}`}>
+                                <Link href="/author/novels" onClick={()=>{setDropdownOpen(!isDropdownOpen)}} className={`flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-indigo-200 dark:hover:bg-gray-700 group ${isActive('/author/novels') ? 'bg-indigo-300' : ''}`}>
                                     <span className="flex-1 ml-3 whitespace-nowrap">My Novels</span>
                                 </Link>
                             </li>
                             <li className=' my-auto'>
-                                <Link href="/author/writing-desk" className={`flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-indigo-200 dark:hover:bg-gray-700 group ${isActive('/author/writing-desk') ? 'bg-indigo-300' : ''}`}>
+                                <Link href="/author/writing-desk" onClick={()=>{setDropdownOpen(!isDropdownOpen)}} className={`flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-indigo-200 dark:hover:bg-gray-700 group ${isActive('/author/writing-desk') ? 'bg-indigo-300' : ''}`}>
                                     <span className="flex-1 ml-3 whitespace-nowrap">Writing Desk</span>
                                 </Link>
                             </li>
                             <li className=' my-auto'>
-                                <Link href="/author/setting" className={`flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-indigo-200 dark:hover-bg-gray-700 group ${isActive('/author/setting') ? 'bg-indigo-300' : ''}`}>
+                                <Link href="/author/setting" onClick={()=>{setDropdownOpen(!isDropdownOpen)}} className={`flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-indigo-200 dark:hover-bg-gray-700 group ${isActive('/author/setting') ? 'bg-indigo-300' : ''}`}>
                                     <span className="flex-1 ml-3 whitespace-nowrap">Setting</span>
                                 </Link>
                             </li>
                             <li className=' my-auto'>
-                            <Link href="#" className={`flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-indigo-200 dark:hover-bg-gray-700 group `}>
+                            <Link href="#" onClick={()=>{setDropdownOpen(!isDropdownOpen)}} className={`flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-indigo-200 dark:hover-bg-gray-700 group `}>
                                 <span className="flex-1 ml-3 whitespace-nowrap"> <LogoutIcon /> Logout</span>
                             </Link>
                             </li>

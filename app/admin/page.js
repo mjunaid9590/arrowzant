@@ -12,9 +12,9 @@ export default function Admin() {
     // console.log(novelsData)
     return (
         <>
-            <div className="flex flex-col w-full mb-auto  h-full">
-                <div className="flex flex-row text-center md:h-40">
-                    <div className="flex flex-wrap md:flex-row md:w-full p-4 text-center items-center justify-evenly">
+            <div className="flex flex-col w-full mb-auto w-full mx-auto h-full">
+                <div className="flex flex-row text-center w-full mx-auto md:h-40">
+                    <div className="flex flex-wrap mx-auto md:flex-row md:w-full p-4 text-center items-center justify-evenly">
                         <div className='bg-green-200 dark:bg-green-800 w-1/2 md:w-1/5 pb-4 rounded-lg border-2 border-gray-300 dark:border-gray-900 shadow-lg'>
                             <h4 className='py-2 md:text-3xl'>View Count</h4>
                             <h2 className=' bg-green-300 dark:bg-green-900 dark:bg-green-900 text-2xl'>188.1k</h2>
@@ -39,7 +39,7 @@ export default function Admin() {
                 </div>
                 <div className="flex flex-col md:flex-row">
 
-                    <div className='md:w-full mx-auto px-4 pb-4  flex flex-col items-center text-center'>
+                    <div className='w-full mb-4 px-4 flex flex-col items-center text-center'>
                         <div className=" w-full bg-red-200 p-4 shadow-xl">
                             <h2 className='border-b py-2-b-2 border-gray-400 text-2xl'>Top Novels</h2>
                             <table className="table-auto w-full border-spacing-y-4 border-collapse ">
@@ -89,7 +89,7 @@ export default function Admin() {
                         </div>
 
                     </div>
-                    <div className='w-full px-4 flex flex-col items-center text-center'>
+                    <div className='w-full mb-4 px-4 flex flex-col items-center text-center'>
                         <div className=" w-full bg-amber-200 shadow-xl p-4">
                             <h2 className='border-b py-2-b-2 border-gray-400 text-2xl'>Top Authors</h2>
                             <table className="table-auto w-full border-spacing-y-4 border-collapse ">

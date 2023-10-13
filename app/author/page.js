@@ -12,9 +12,9 @@ export default function Auther() {
     // console.log(novelsData)
     return (
         <>
-            <div className="flex flex-col w-full mb-auto  h-full dark:text-indigo-100">
-                <div className="flex flex-row text-center md:h-40">
-                    <div className="flex flex-wrap md:flex-row md:w-full p-4 text-center items-center justify-evenly">
+             <div className="flex flex-col mb-auto w-full mx-auto h-full">
+                <div className="flex flex-row text-center w-full mx-auto md:h-40">
+                    <div className="flex flex-wrap mx-auto md:flex-row md:w-full p-4 text-center items-center justify-evenly">
                         <div className='bg-green-200 dark:bg-green-800 w-1/2 md:w-1/5 pb-4 rounded-lg border-2 border-gray-300 dark:border-gray-900 shadow-lg'>
                             <h4 className='py-2 md:text-3xl'>View Count</h4>
                             <h2 className=' bg-green-300 dark:bg-green-900 dark:bg-green-900 text-2xl'>188.1k</h2>
@@ -37,10 +37,10 @@ export default function Auther() {
                 <div>Stat 2</div>
             </div> */}
                 </div>
-                <div className="flex flex-col md:flex-row mx-auto w-1/2">
+                <div className="flex flex-col md:flex-row">
 
-                    <div className='md:w-full mx-auto px-4 pb-4  flex flex-col items-center text-center'>
-                        <div className=" w-full bg-red-200 dark:bg-red-900 p-4 shadow-xl">
+                    <div className='md:w-3/4 mx-auto mb-4 px-4 flex flex-col items-center text-center'>
+                        <div className=" w-full bg-red-200 p-4 shadow-xl">
                             <h2 className='border-b py-2-b-2 border-gray-400 text-2xl'>My Top Novels</h2>
                             <table className="table-auto w-full border-spacing-y-4 border-collapse ">
                                 <thead>
@@ -89,6 +89,7 @@ export default function Auther() {
                         </div>
 
                     </div>
+                    
                 </div>
             </div>
 

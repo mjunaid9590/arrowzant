@@ -55,7 +55,7 @@ const EditChapter = () => {
                                         value={TitleText}
                                         onChange={handleTitleChange}
                                         placeholder='Enter Title of Chapter'
-                                        className="w-full bg-gray-100 dark:bg-gray-800 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-gray-700 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 dark:text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                        className="w-full bg-gray-100 dark:bg-gray-800 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-gray-100 dark:focus:bg-gray-700 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 dark:text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                                     />
                                 </div>
                             </div>
@@ -74,7 +74,7 @@ const EditChapter = () => {
                                         onKeyPress={handleKeyPress}
                                         rows="30"
                                         placeholder='Start your writing here. . . .'
-                                        className="w-full bg-gray-100 dark:bg-gray-900 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-gray-700 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 dark:text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                        className="w-full bg-gray-100 dark:bg-gray-900 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-gray-100 dark:focus:bg-gray-700 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 dark:text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                                     />
                                 </div>
                             </div>

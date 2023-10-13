@@ -127,7 +127,7 @@ const LandingPage = () => {
     <div className='p-5'>
       <h1 className='text-3xl p-5 text-center text-black'>Landing Page Settings</h1>
 
-      <h2 className="text-2xl pb-4 pt-2 md:p-5 md:pb-2">Select the Genres/Categories to show on the front page.</h2>
+      <h2 className="text-lg pb-4 pt-2 md:p-5 md:pb-2">Select the Genres/Categories to show on the front page.</h2>
       <FormGroup className='flex flex-row pb-4 md:p-5'>
         <FormControlLabel control={<Checkbox defaultChecked />} label="Editor's Picks" />
         <FormControlLabel control={<Checkbox defaultChecked />} label="Horror" />
@@ -141,15 +141,15 @@ const LandingPage = () => {
         <FormControlLabel control={<Checkbox defaultChecked />} label="Superhero" />
 
       </FormGroup>
-      <h2 className="text-2xl pb-4 pt-2 md:p-5">Select the Novels to show on the front page.</h2>
+      <h2 className="text-lg pb-4 pt-2 md:p-5">Select the Novels to show on the front page.</h2>
       <div className="flex flex-col md:flex-row md:flex-grow md:flex-wrap md:p-5">
         {novelsData.map((categoryData, index) => (
           <div key={index} className=" w-full md:w-1/2 p-3 mb-8 border-r border-gray-400">
-            <div className="flex flex-col md:flex-row justify-between border-b border-gray-600">
+            <div className="flex flex-col md:flex-row justify-between md:border-b md:border-gray-600">
               <h2 className='text-3xl pb-2  font-semibold'>
                 {categoryData.category}
               </h2>
-              <button onClick={() => openModal(categoryData.category)} className='text-center md:text-end my-auto text-md p-1 px-3 rounded-lg bg-green-500 hover:bg-green-600 dark:bg-green-800 text-white'><AddIcon /> Add Novel</button>
+              <button onClick={() => openModal(categoryData.category)} className='text-center md:text-end my-1 md:my-auto text-md p-1 px-3 rounded-lg bg-green-500 hover:bg-green-600 dark:bg-green-800 text-white'><AddIcon /> Add Novel</button>
             </div>
             {categoryData.novels.map((novel, novelIndex) => (
               <div key={novelIndex} className="border-b border-gray-400 flex flex-row justify-between p-2">

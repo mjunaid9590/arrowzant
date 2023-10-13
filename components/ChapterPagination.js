@@ -27,7 +27,7 @@ const ChapterPagination = ({ totalPages, currentPage, resultsPerPage, totalResul
         <Link
           href={`/${pageLink}/chapter-${Number(currentPage) - 1}`}
          
-          className={`${(currentPage <= 1) ? "md:pointer-events-none md:opacity-0" : ""} hidden md:inline-flex  relative  items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50`}
+          className={`${(currentPage <= 1) ? "md:pointer-events-none md:opacity-0" : ""} hidden md:inline-flex  relative  items-center rounded-md border border-gray-300 bg-white dark:bg-slate-800 px-4 py-2 text-sm font-medium dark:text-gray-200 text-gray-700 hover:bg-gray-50`}
         >
           Previous
         </Link>
@@ -35,18 +35,18 @@ const ChapterPagination = ({ totalPages, currentPage, resultsPerPage, totalResul
         {/* </div> */}
         <div className="sm:flex sm:items-center sm:justify-between">
 
-          <div className='bg-gray-100'>
+          <div className='bg-gray-100 dark:bg-gray-800'>
             <nav className="isolate inline-flex -space-x-px rounded-md shadow-sm" aria-label="Pagination">
               <Link
                 href={`/${pageLink}/chapter-${currentPage - 1}`}
-                className={`${(Number(currentPage) <= 1) ? "hidden" : ""} relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0`}
+                className={`${(Number(currentPage) <= 1) ? "hidden" : ""} relative inline-flex items-center rounded-l-md px-2 py-2 dark:text-gray-200 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0`}
               >
                 {/* {console.log("current page: ",currentPage)} */}
                 <span className="sr-only">Previous</span>
                 <ChevronLeftIcon className="h-5 w-5" aria-hidden="true" />
               </Link>
               
-              {/* Current: "z-10 bg-indigo-600 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600", Default: "text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:outline-offset-0" */}
+              {/* Current: "z-10 bg-indigo-600 text-white dark:dark:text-gray-200 text-gray-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600", Default: "dark:text-gray-200 text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:outline-offset-0" */}
               {/* {pageNumbers.map((page, index) => (
               
                 
@@ -56,8 +56,8 @@ const ChapterPagination = ({ totalPages, currentPage, resultsPerPage, totalResul
                   aria-current="page"
                   className={`
                 ${(currentPage == (index + 1)) ?
-                      "relative z-10 inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" :
-                      "relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"}
+                      "relative z-10 inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold text-white dark:dark:text-gray-200 text-gray-200 focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" :
+                      "relative inline-flex items-center px-4 py-2 text-sm font-semibold dark:text-gray-200 text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"}
                 
                 `}>
                   {index + 1}
@@ -71,8 +71,8 @@ const ChapterPagination = ({ totalPages, currentPage, resultsPerPage, totalResul
                 aria-current="page"
                 className={`${
                   currentPage === 1
-                    ? 'relative z-10 inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
-                    : 'relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0'
+                    ? 'relative z-10 inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold text-white dark:dark:text-gray-200 text-gray-200 focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+                    : 'relative inline-flex items-center px-4 py-2 text-sm font-semibold dark:text-gray-200 text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0'
                 }`}
               >
                 {1}
@@ -81,7 +81,7 @@ const ChapterPagination = ({ totalPages, currentPage, resultsPerPage, totalResul
               }
                {
                 (startPage>2)&&
-                 <span className="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-700 ring-1 ring-inset ring-gray-300 focus:outline-offset-0">
+                 <span className="relative inline-flex items-center px-4 py-2 text-sm font-semibold dark:text-gray-200 text-gray-700 ring-1 ring-inset ring-gray-300 focus:outline-offset-0">
                 ...
               </span> 
               
@@ -96,8 +96,8 @@ const ChapterPagination = ({ totalPages, currentPage, resultsPerPage, totalResul
                     aria-current="page"
                     className={`${
                       currentPage == page
-                        ? 'relative z-10 inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
-                        : 'relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0'
+                        ? 'relative z-10 inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold text-white dark:dark:text-gray-200 text-gray-200 focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+                        : 'relative inline-flex items-center px-4 py-2 text-sm font-semibold dark:text-gray-200 text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0'
                     }`}
                   >
                     {page}
@@ -106,7 +106,7 @@ const ChapterPagination = ({ totalPages, currentPage, resultsPerPage, totalResul
               })}
               {
                 ((endPage+1)<totalPages)&&
-                 <span className="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-700 ring-1 ring-inset ring-gray-300 focus:outline-offset-0">
+                 <span className="relative inline-flex items-center px-4 py-2 text-sm font-semibold dark:text-gray-200 text-gray-700 ring-1 ring-inset ring-gray-300 focus:outline-offset-0">
                 ...
               </span> 
               
@@ -119,8 +119,8 @@ const ChapterPagination = ({ totalPages, currentPage, resultsPerPage, totalResul
                 aria-current="page"
                 className={`${
                   currentPage === totalPages
-                    ? 'relative z-10 inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
-                    : 'relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0'
+                    ? 'relative z-10 inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold text-white dark:dark:text-gray-200 text-gray-200 focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+                    : 'relative inline-flex items-center px-4 py-2 text-sm font-semibold dark:text-gray-200 text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0'
                 }`}
               >
                 {totalPages}
@@ -129,12 +129,12 @@ const ChapterPagination = ({ totalPages, currentPage, resultsPerPage, totalResul
               }
               <Link
                 href={`/${pageLink}/chapter-${currentPage+1}`}
-                className={`${(currentPage >= totalPages) ? "hidden" : ""} relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0`}
+                className={`${(currentPage >= totalPages) ? "hidden" : ""} relative inline-flex items-center rounded-r-md px-2 py-2 dark:text-gray-200 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0`}
               >
                 <span className="sr-only">Next</span>
                 <ChevronRightIcon className="h-5 w-5" aria-hidden="true" />
               </Link>
-              {/* <span className="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-700 ring-1 ring-inset ring-gray-300 focus:outline-offset-0">
+              {/* <span className="relative inline-flex items-center px-4 py-2 text-sm font-semibold dark:text-gray-200 text-gray-700 ring-1 ring-inset ring-gray-300 focus:outline-offset-0">
                 ...
               </span> */}
 
@@ -143,7 +143,7 @@ const ChapterPagination = ({ totalPages, currentPage, resultsPerPage, totalResul
         </div>
         <Link
           href={`/${pageLink}/chapter-${currentPage+1}`}
-          className={`${(currentPage >= totalPages) ? "md:pointer-events-none md:opacity-0" : ""} hidden md:inline-flex relative  items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50`}
+          className={`${(currentPage >= totalPages) ? "md:pointer-events-none md:opacity-0" : ""} hidden md:inline-flex relative  items-center rounded-md border border-gray-300 bg-white dark:bg-slate-800 px-4 py-2 text-sm font-medium dark:text-gray-200 text-gray-700 hover:bg-gray-50`}
         >
           Next
         </Link>

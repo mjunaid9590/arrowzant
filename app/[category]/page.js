@@ -29,59 +29,59 @@ export default function Home({params}) {
               <div className="flex flex-wrap md:flex-wrap md:justify-evenly w-full" >
                 <div className='px-2 p-4'>
 
-                  <NovelCardLarge name="Mysterical Moon" author="Jane Austing" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
+                  <NovelCardLarge name="Mysterical Moon" author="James Miller" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
                 </div>
                 <div className='px-2 p-4'>
 
-                  <NovelCardLarge name="Mysterical Moon" author="Jane Austing" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
+                  <NovelCardLarge name="Mysterical Moon" author="James Miller" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
                 </div>
                 <div className='px-2 p-4'>
 
-                  <NovelCardLarge name="Mysterical Moon" author="Jane Austing" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
+                  <NovelCardLarge name="Mysterical Moon" author="James Miller" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
                 </div>
                 <div className='px-2 p-4'>
 
-                  <NovelCardLarge name="Mysterical Moon" author="Jane Austing" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
+                  <NovelCardLarge name="Mysterical Moon" author="James Miller" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
                 </div>
                 <div className='px-2 p-4'>
 
-                  <NovelCardLarge name="Mysterical Moon" author="Jane Austing" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
+                  <NovelCardLarge name="Mysterical Moon" author="James Miller" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
                 </div>
                 <div className='px-2 p-4'>
 
-                  <NovelCardLarge name="Mysterical Moon" author="Jane Austing" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
+                  <NovelCardLarge name="Mysterical Moon" author="James Miller" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
                 </div>
                 <div className='px-2 p-4'>
 
-                  <NovelCardLarge name="Mysterical Moon" author="Jane Austing" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
+                  <NovelCardLarge name="Mysterical Moon" author="James Miller" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
                 </div>
                 <div className='px-2 p-4'>
 
-                  <NovelCardLarge name="Mysterical Moon" author="Jane Austing" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
+                  <NovelCardLarge name="Mysterical Moon" author="James Miller" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
                 </div>
                 <div className='px-2 p-4'>
 
-                  <NovelCardLarge name="Mysterical Moon" author="Jane Austing" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
+                  <NovelCardLarge name="Mysterical Moon" author="James Miller" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
                 </div>
                 <div className='px-2 p-4'>
 
-                  <NovelCardLarge name="Mysterical Moon" author="Jane Austing" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
+                  <NovelCardLarge name="Mysterical Moon" author="James Miller" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
                 </div>
                 <div className='px-2 p-4'>
 
-                  <NovelCardLarge name="Mysterical Moon" author="Jane Austing" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
+                  <NovelCardLarge name="Mysterical Moon" author="James Miller" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
                 </div>
                 <div className='px-2 p-4'>
 
-                  <NovelCardLarge name="Mysterical Moon" author="Jane Austing" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
+                  <NovelCardLarge name="Mysterical Moon" author="James Miller" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
                 </div>
                 <div className='px-2 p-4'>
 
-                  <NovelCardLarge name="Mysterical Moon" author="Jane Austing" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
+                  <NovelCardLarge name="Mysterical Moon" author="James Miller" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
                 </div>
                 <div className='px-2 p-4'>
 
-                  <NovelCardLarge name="Mysterical Moon" author="Jane Austing" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
+                  <NovelCardLarge name="Mysterical Moon" author="James Miller" category={params.category} slug='the-mystery-of-moonlight' imgURL="/genre/horror.png" rating={3} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum dolorum veritatis porro? Eos dignissimos assumenda similique illo ut eum?"/>
                 </div>
                 
               </div>

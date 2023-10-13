@@ -81,24 +81,24 @@ const Chapter = ({ params, searchParams }) => {
         <div className="flex flex-col w-full mb-10">
           <div className=" ml-5 w-full mb-6 lg:mb-0  text-center">
             <div className="flex flex-col">
-              <h1 className="chapter-title sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+              <h1 className="chapter-title sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 dark:text-gray-100">
                 {currentNovel ? currentNovel.title : ''}
               </h1>
               <div className="" >
-                <h2 className="text-xl w-full leading-relaxed text-gray-500">
+                <h2 className="text-xl w-full leading-relaxed text-gray-500 dark:text-gray-200">
                   {currentNovel ? `By ${currentNovel.author}` : ''}
                 </h2>
               </div>
             </div>
           </div>
           <div>
-          <h1 className="chapter-title sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+          <h1 className="chapter-title sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 dark:text-gray-100">
                 CHAPTER-{currentChapter.chapterNumber}
               </h1>
             <div className="h-1 w-20 bg-indigo-500 rounded" />
           </div>
         </div>
-        <div className="flex mx-5 text-2xl flex-wrap -m-4 justify-stretch">
+        <div className="flex mx-5 text-2xl dark:text-gray-400 flex-wrap -m-4 justify-stretch">
       
          {
           chapterText.map((para, index) => {

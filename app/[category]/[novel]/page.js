@@ -28,29 +28,29 @@ const Novel = ({ params, searchParams }) => {
         // Handle page change here (e.g., updating the URL)
     };
     return (
-        <div className="text-gray-600 body-font">
-            <div className="container flex-col mt-4 p-8 shadow-xl rounded-3xl bg-indigo-50 mx-auto">
+        <div className="text-gray-600 dark:text-gray-200 body-font">
+            <div className="container flex-col mt-4 p-8 shadow-xl rounded-3xl bg-indigo-50 dark:bg-slate-800 mx-auto">
                 <div className="head flex flex-col md:flex-row">
                     <div className="md:w-1/5">
                         <img src="/genre/horror.png" alt="" />
                     </div>
                     <div className="w-4/5 flex flex-col md:pl-10 space-y-4">
-                        <h1 className="text-4xl text-black font-bold">The Mystery of Moonlight</h1>
+                        <h1 className="text-4xl text-black dark:text-gray-100 font-bold">The Mystery of Moonlight</h1>
                         <h2 className="text-2xl">By Sarah Johanson</h2>
                         <h2 className="text-2xl">Horror | Ongoing | Chapters 209</h2>
                         <div className="flex flex-row space-x-1">
-                            <div className="flex flex-col p-1 px-10 bg-indigo-200 shadow-lg">
+                            <div className="flex flex-col p-1 px-10 bg-indigo-200 dark:bg-slate-500 shadow-lg">
                                 <p className='font-semibold text-black text-xl'>44.2k</p>
-                                <h2 className='text-xl'>Reads</h2>
+                                <h2 className='text-xl text-gray-900'>Reads</h2>
                             </div>
-                            <div className="flex flex-col p-1 px-10 bg-indigo-200 shadow-lg">
+                            <div className="flex flex-col p-1 px-10 bg-indigo-200 dark:bg-slate-500 shadow-lg">
                                 <p className='font-semibold text-black text-xl'>12.5k</p>
-                                <h2 className='text-xl'>Likes</h2>
+                                <h2 className='text-xl text-gray-900'>Likes</h2>
                             </div>
 
                         </div>
                         <div className="flex flex-row space-x-3">
-                            <Link href={`/${category}/${novel}/chapters`} className='bg-blue-500 justify-center align-middle text-lg text-white rounded-md p-3'>
+                            <Link href={`/${category}/${novel}/chapters`} className='bg-blue-500 dark:bg-blue-800 justify-center align-middle text-lg text-white rounded-md p-3'>
                                 Start Reading
                             </Link>
                             <button className='border flex flex-row space-x-2 border-red-500 rounded-md p-3'>

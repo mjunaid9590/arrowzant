@@ -30,12 +30,12 @@ const Novel = ({ params, searchParams }) => {
             <div className="container px-5 pt-12 pb-8 mx-auto flex-grow">
                 <div className="flex flex-wrap w-full mb-10">
                     <div className="lg:w-1/2 ml-5 w-full mb-6 lg:mb-0">
-                        <h1 className="novel-title sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+                        <h1 className="novel-title sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 dark:text-white">
                         {currentNovel ? currentNovel.title : ''}
                         </h1>
                         <div className="h-1 w-40 bg-indigo-500 rounded" />
                         <div className="" >
-                            <h2 className="text-xl lg:w-1/2 w-full leading-relaxed text-gray-500">
+                            <h2 className="text-xl lg:w-1/2 w-full leading-relaxed text-gray-500 dark:text-gray-200">
                             {currentNovel ? `By ${currentNovel.author}` : ''}
                             </h2>
                         </div>
@@ -46,9 +46,9 @@ const Novel = ({ params, searchParams }) => {
                         currentPageChapters.map((chapter, index) => (
                             <div key={index} className="p-4 md:w-1/3">
                                 {/* {console.log(chaptersData)} */}
-                                <Link href={`../${currentNovel.slug}/${chapter.chapterLink}`} className="flex rounded-lg h-full bg-gray-100 p-3 flex-col hover:shadow-md hover:bg-indigo-100">
-                                    <h2 className="text-indigo-800 text-lg title-font font-medium">CHAPTER-{chapter.chapterNumber}</h2>
-                                    <p className="leading-relaxed text-sm">{chapter.chapterTitle}</p>
+                                <Link href={`../${currentNovel.slug}/${chapter.chapterLink}`} className="flex rounded-lg h-full bg-gray-100 dark:bg-slate-800 dark:hover:bg-slate-700 p-3 flex-col hover:shadow-md hover:bg-indigo-100">
+                                    <h2 className="text-indigo-800 dark:text-indigo-200 text-lg title-font font-medium">CHAPTER-{chapter.chapterNumber}</h2>
+                                    <p className="leading-relaxed text-sm dark:text-gray-300">{chapter.chapterTitle}</p>
                                 </Link>
                             </div>
                         ))
@@ -60,7 +60,7 @@ const Novel = ({ params, searchParams }) => {
                 currentPage={currentPage}
                 resultsPerPage={chaptersPerPage}
                 totalResults={chaptersData.length}
-                pageLink={`${category}/${novel}`}
+                pageLink={`${category}/${novel}/chapters`}
                 nextPrevButtons={true}
                 resultsCount={true}
             />

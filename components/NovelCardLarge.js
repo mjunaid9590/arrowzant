@@ -6,7 +6,7 @@ const NovelCardLarge = (props) => {
     const { name, author, description, imgURL, rating, category, slug } = props
     return (
         <div className='max-h-min relative max-w-xl'>
-            <Link href={`/${category}/${slug}`} className="flex rounded-lg h-full bg-gray-100 dark:bg-slate-600 p-3 flex-col hover:shadow-md hover:bg-indigo-100">
+            <Link href={`/${category}/${slug}`} className="flex rounded-lg h-full bg-gray-100 dark:bg-slate-600 p-3 flex-col hover:shadow-md hover:bg-indigo-100 dark:hover:bg-slate-700 dark:text-gray-200 dark:hover:text-gray-300">
                 <div className="flex flex-row">
                     <img src={imgURL} alt="" className="h-40 w-auto mr-4 rounded-md" />
                     <div className="flex flex-col">
